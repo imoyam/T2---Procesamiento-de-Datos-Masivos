@@ -6,6 +6,7 @@ class MDBClient:
     def __init__(self, host: str = MDB_HOST, port: int = MDB_PORT) -> None:
         self.url = f"http://{host}:{port}"
         print(f"[MDB] Cliente HTTP listo en {self.url}")
+        
     def __enter__(self) -> "MDBClient": return self
     def __exit__(self, *_) -> None: pass
 
@@ -32,3 +33,11 @@ class MDBClient:
     def run_iter(self, query: str) -> Iterator[dict]:
         for fila in self.run(query):
             yield fila
+
+_cliente_global = None
+
+def get_client() -> MDBClient:
+    global _cliente_global
+    if _cliente_global is None:
+        _cliente_global = MDBClient()
+    return _cliente_global

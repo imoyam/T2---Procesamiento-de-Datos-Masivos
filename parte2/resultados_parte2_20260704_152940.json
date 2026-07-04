@@ -1,0 +1,21 @@
+{
+  "parte": 2,
+  "estrategia": "GraphRAG",
+  "top_k": 5,
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-07-04T15:29:40.058568",
+  "resultados": {
+    "patron_a": {
+      "error": "HTTP 400: Parsing Exception. Line 3, col: 17: mismatched input `(`"
+    },
+    "patron_b": {
+      "error": "HTTP 400: Parsing Exception. Line 4, col: 13: mismatched input `(`"
+    },
+    "patron_c": {
+      "error": "HTTP 400: Parsing Exception. Line 7, col: 4: mismatched input `OPTIONAL`"
+    },
+    "comparacion_2_2": {
+      "error": "HTTP 400: Parsing Exception. Line 3, col: 17: mismatched input `(`"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "parte": 2,
+  "estrategia": "GraphRAG",
+  "top_k": 5,
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-07-04T18:45:35.133655",
+  "resultados": {
+    "patron_a": {
+      "patron_a_partido": {
+        "question": "¿Qué opina el Partido Socialista de Chile sobre la reforma de pensiones?",
+        "party_filter": "Partido Socialista de Chile",
+        "answer": "El contexto proporcionado no incluye información específica sobre la opinión del Partido Socialista de Chile respecto a la reforma de pensiones. Por lo tanto, no puedo ofrecer una respuesta sobre su postura en este tema.",
+        "retrieved_ids": [
+          "null",
+          "null",
+          "null",
+          "null",
+          "null"
+        ]
+      },
+      "patron_a_camara": {
+        "question": "¿Qué se ha debatido sobre el acceso al agua?",
+        "chamber_filter": "Senado",
+        "retrieved_ids": []
+      }
+    },
+    "patron_b": {
+      "patron_b_contraste_partido": {
+        "question": "¿Cuál es la postura sobre la migración e inmigración en Chile?",
+        "parties_found": [
+          "Partido Demócrata Cristiano",
+          "Partido Renovación Nacional",
+          "Partido Unión Demócrata Independiente",
+          "Partido Socialista de Chile",
+          "Partido por la Democracia"
+        ],
+        "answer": "Los distintos partidos políticos en Chile abordan el tema de la migración desde perspectivas variadas, reflejando tanto diferencias como coincidencias en sus enfoques.\n\n### Partido Demócrata Cristiano\nEl Partido Demócrata Cristiano defiende un enfoque de derechos humanos en la migración, argumentando que el proyecto de ley busca priorizar ciertos derechos de los migrantes, quienes se encuentran en una situación de vulnerabilidad. Destacan que la legislación actual garantiza derechos como la reunificación familiar y el refugio, y critican a quienes consideran que el proyecto atenta contra la dignidad humana. Además, mencionan que han trabajado durante años para regular la migración de manera ordenada y segura, y que han enfrentado oposición de otros sectores políticos que consideran la legislación restrictiva y discriminatoria [INT-null].\n\n### Partido Renovación Nacional\nPor otro lado, el Partido Renovación Nacional enfatiza la necesidad de regularizar la situación migratoria para acceder a beneficios fiscales, argumentando que permitir el acceso irrestricto a estos beneficios a migrantes irregulares crea inequidad. Su postura es que la migración debe ser ordenada y que el respeto a las normas es fundamental para proteger tanto a los migrantes como a la comunidad de acogida. Critican a quienes no han seguido los canales regulares y consideran que el proyecto no busca discriminar, sino establecer justicia y coherencia en el acceso a los recursos del Estado [INT-null].\n\n### Partido Unión Demócrata Independiente\nEl Partido Unión Demócrata Independiente comparte una postura similar a la de Renovación Nacional, abogando por la priorización de los chilenos en el acceso a servicios de salud y educación cuando los sistemas están sobreexigidos. Argumentan que el proyecto busca ordenar la migración y que no se debe permitir que quienes ingresan irregularmente accedan a los mismos beneficios que quienes han cumplido con la ley. Se enfocan en la necesidad de recuperar el orden y proteger a la población local [INT-null].\n\n### Partido Socialista de Chile\nEl Partido Socialista, en contraste, apoya el proyecto del gobierno, argumentando que se hace cargo del fenómeno migratorio actual y que el aumento en los años de residencia para el voto de migrantes es una medida adecuada. Critican la doble moral de ciertos sectores que, mientras cuestionan a los migrantes, buscan su apoyo en elecciones. Su enfoque se centra en la eficacia del Estado y el respeto a los derechos fundamentales, considerando que el proyecto es un paso en la dirección correcta [INT-null].\n\n### Partido por la Democracia\nFinalmente, el Partido por la Democracia aboga por la protección de los derechos humanos de los migrantes, enfatizando que no se debe discriminar a los niños en función de la situación migratoria de sus padres. Critican cualquier forma de discriminación que vulnere los derechos humanos y llaman a la solidaridad y el amor al prójimo, alineándose con principios cristianos y la Convención sobre los Derechos del Niño [INT-null].\n\n### Conclusiones\nEn resumen, las diferencias principales radican en la percepción de la migración como un fenómeno que debe ser regulado estrictamente (Renovación Nacional y Unión Demócrata Independiente) frente a un enfoque más humanitario y de derechos (Demócrata Cristiano, Socialista y por la Democracia). Las coincidencias incluyen la necesidad de regular la migración, aunque con diferentes enfoques sobre cómo hacerlo y a quién priorizar en el acceso a beneficios."
+      },
+      "patron_b_contraste_camara": {
+        "question": "¿Cómo se ha debatido el proyecto de ley de salud mental?",
+        "chambers_found": []
+      }
+    },
+    "patron_c": {
+      "patron_c_edad": {
+        "question": "¿Qué se dice sobre el cambio climático y medio ambiente?",
+        "jovenes_ids": [],
+        "mayores_ids": []
+      },
+      "patron_c_temporal": {
+        "question": "¿Qué se ha discutido sobre la violencia en La Araucanía?",
+        "ids_2018_2019": [],
+        "ids_2022_2023": []
+      },
+      "patron_c_evolucion": {
+        "question": "¿Qué se ha discutido sobre la violencia en La Araucanía?",
+        "years": {
+          "2025": [
+            "null",
+            "null"
+          ],
+          "2026": [
+            "null",
+            "null"
+          ]
+        }
+      }
+    },
+    "comparacion_2_2": {
+      "pregunta": "¿Qué opina la UDI sobre el impuesto a las grandes fortunas?",
+      "partido_filtro": "Partido Unión Demócrata Independiente",
+      "denso": {
+        "partidos_en_contexto": [
+          "Partido Unión Demócrata Independiente",
+          "Partido Socialista de Chile",
+          "Partido Renovación Nacional"
+        ],
+        "answer": "La UDI ha expresado preocupaciones sobre la creación de impuestos en el contexto de la discusión legislativa. Un parlamentario de la UDI argumentó que hay un problema severo con la inclusión de normas que generan impuestos sin seguir los procedimientos adecuados, como no haber pasado por la Comisión de Hacienda. Este parlamentario solicitó que se declare la inadmisibilidad de esa parte del informe de la comisión mixta, haciendo reserva de constitucionalidad, lo que indica una postura crítica hacia la forma en que se están introduciendo nuevos gravámenes [INT-null].\n\nSin embargo, otro miembro de la UDI mencionó que hay voluntad en su partido de votar a favor del proyecto, sugiriendo que a través de indicaciones y mejoras en la discusión particular del proyecto, se puede lograr un avance. Este parlamentario también destacó la necesidad de legislar de manera definitiva y no continuar con medidas transitorias, lo que sugiere una apertura a la reforma, aunque con la condición de que se realicen mejoras sustanciales [INT-null].\n\nEn resumen, la UDI tiene posturas mixtas: por un lado, hay críticas sobre la forma de introducir impuestos, y por otro, hay disposición a apoyar el proyecto si se realizan las mejoras necesarias.",
+        "ids": [
+          "null",
+          "null",
+          "null",
+          "null",
+          "null"
+        ]
+      },
+      "graph": {
+        "partidos_en_contexto": [
+          "Partido Unión Demócrata Independiente"
+        ],
+        "answer": "El contexto proporcionado no menciona específicamente la opinión de la UDI sobre el impuesto a las grandes fortunas. Sin embargo, se expresa una preocupación general sobre la inclusión de normas que generan impuestos en la comisión mixta sin haber pasado por la Comisión de Hacienda y sin atenerse a las ideas matrices del proyecto. Un parlamentario de la UDI argumenta que esto podría sentar un precedente serio para futuros gobiernos y solicita la declaración de inadmisibilidad de dicha norma [INT-null].\n\nPor otro lado, también se menciona que hay voluntad en la UDI de votar a favor de un proyecto, con la esperanza de mejorarlo a través de indicaciones, y se considera imprescindible legislar de manera definitiva, aunque no se especifica si esto se relaciona directamente con un impuesto a las grandes fortunas [INT-null].\n\nEn resumen, la UDI muestra preocupación por la forma en que se están introduciendo impuestos en el proceso legislativo, pero también expresa disposición para avanzar en la legislación en general. No hay una postura clara sobre el impuesto a las grandes fortunas en el contexto proporcionado.",
+        "ids": [
+          "null",
+          "null",
+          "null",
+          "null",
+          "null"
+        ]
+      }
+    }
+  }
+}

@@ -1,20 +1,3 @@
-"""
-parte2/run_parte2.py  —  Parte 2.1 / 2.2
-------------------------------------------
-Script principal de la Parte 2: GraphRAG.
-
-Ejecutar:
-    cd rag_legislativo
-    python parte2/run_parte2.py
-
-Qué hace:
-  1. Demuestra los tres patrones de consulta requeridos (A, B, C).
-  2. Para cada patrón, muestra la consulta MDB, los chunks recuperados
-     y la respuesta generada por GPT-4o-mini.
-  3. Parte 2.2: compara lado a lado RAG denso vs GraphRAG en un caso
-     donde GraphRAG gana claramente, con análisis del porqué.
-  4. Guarda resultados en JSON.
-"""
 
 from __future__ import annotations
 import sys, os, json
@@ -79,7 +62,7 @@ def demo_patron_a(graph: GraphRetriever, pipeline_graph: RAGPipeline) -> dict:
 
     # A.1 — Filtro por partido
     question_partido = "¿Cuál es la postura sobre la reforma de pensiones?"
-    partido = "Partido Socialista"   # ← ajustar según los partidos en tus datos
+    partido = "Partido Socialista de Chile"   # ← ajustar según los partidos en tus datos
     print(f"\n  A.1 Filtro por PARTIDO: '{partido}'")
     print(f"  Pregunta: {question_partido}")
 
@@ -294,7 +277,7 @@ def demo_comparacion(
     print_section("PARTE 2.2 — Comparación: Dense RAG vs GraphRAG")
 
     question = "¿Qué opina la UDI sobre el impuesto a las grandes fortunas?"
-    partido   = "UDI"   # Unión Demócrata Independiente
+    partido   = "Partido Unión Demócrata Independiente"   # Unión Demócrata Independiente
 
     print(f"\n  Pregunta: {question}")
     print(f"  Partido bajo análisis: {partido}")
