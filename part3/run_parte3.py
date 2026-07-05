@@ -45,7 +45,7 @@ def answer_or_retrieve(pipeline: RAGPipeline, question: str, k: int, no_llm: boo
         chunks = pipeline.retriever.retrieve(question, k=k)
         return {
             "question": question,
-            "answer": None,
+            "answer": "LLM desactivado (--no-llm); revisar retrieved_chunks.",
             "retrieved_chunks": [chunk_to_dict(chunk) for chunk in chunks],
         }
 

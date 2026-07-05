@@ -45,7 +45,18 @@ class SparseRetriever:
 
     def _load_or_build(self, auto_build: bool, build_limit: Optional[int]) -> BM25Index:
         if self.index_path.exists():
-            return BM25Index.load(self.index_path)
+            index = BM25Index.load(self.index_path)
+            if index.size > 0 and index.vocabulary_size > 0:
+                return index
+            if not auto_build:
+                raise ValueError(
+                    f"El indice sparse en {self.index_path} esta vacio. "
+                    "Reconstruyelo con: python part3/run_parte3.py --force-rebuild"
+                )
+            print(f"[Parte 3] Indice sparse vacio en {self.index_path}; reconstruyendo...")
+            index = BM25Index.from_mdb(self.client, limit=build_limit)
+            index.save(self.index_path)
+            return index
         if not auto_build:
             raise FileNotFoundError(
                 f"No existe el indice sparse en {self.index_path}. "

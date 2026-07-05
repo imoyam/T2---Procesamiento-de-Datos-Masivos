@@ -69,6 +69,9 @@ def _clean_value(value: Any) -> str:
 def _parse_mdb_row(row: dict[str, Any]) -> dict[str, str]:
     if not row:
         return {}
+    if len(row) >= 3:
+        return {key.strip().replace("?", ""): _clean_value(value) for key, value in row.items()}
+
     raw_keys = list(row.keys())[0]
     raw_vals = list(row.values())[0]
     keys = [k.strip().replace("?", "") for k in raw_keys.split(",")]
@@ -88,12 +91,12 @@ def rows_to_documents(rows: Iterable[dict[str, Any]]) -> list[SparseDocument]:
         if not data:
             continue
 
-        chunk_id = data.get("emb.chunk_id", "")
-        intervention_id = data.get("i.id", "")
-        text = data.get("emb.content", "")
+        chunk_id = data.get("emb") or data.get("emb.chunk_id") or data.get("chunk_id") or ""
+        intervention_id = data.get("i") or data.get("i.id") or data.get("id") or ""
+        text = data.get("emb.content") or data.get("content") or ""
 
         doc_id = chunk_id or intervention_id or uuid.uuid4().hex
-        
+
         if not text or doc_id in seen:
             continue
 
@@ -104,6 +107,10 @@ def rows_to_documents(rows: Iterable[dict[str, Any]]) -> list[SparseDocument]:
                 intervention_id=intervention_id,
                 chunk_id=chunk_id,
                 text=text,
+                speaker=data.get("person.full_name", "") or data.get("pos.name", ""),
+                party=data.get("pp.name", ""),
+                chamber=data.get("pos.role", "") or data.get("ch.name", ""),
+                session_date=data.get("s.date", ""),
             )
         )
 
@@ -130,15 +137,30 @@ class BM25Index:
     @classmethod
     def from_mdb(cls, client: Any, limit: Optional[int] = None) -> "BM25Index":
         # Usamos LIMIT 3000 para que indexe en 5 segundos y evite congelarse
-        # Y solo traemos lo vital para no sobrecargar el motor
         limite_real = limit if limit else 3000
         query = f"""
-        MATCH (?i :Intervention)-[:HasEmbedding]->(?emb :Embedding)
-        RETURN ?emb.chunk_id, ?i.id, ?emb.content
+        MATCH (?i :Intervention)-[:HasEmbedding]->(?emb :Embedding),
+              (?i)-[:DeliveredBy]->(?pos :Position)-[:Represents]->(?pp :PoliticalParty),
+              (?person :Person)-[:ServedAs]->(?pos)
+        RETURN ?emb, ?i, ?emb.content, ?person.full_name, ?pp.name, ?pos.role
         LIMIT {limite_real}
         """
         rows = client.run(query)
         docs = rows_to_documents(rows)
+        if not docs:
+            fallback = f"""
+            MATCH (?i :Intervention)-[:HasEmbedding]->(?emb :Embedding)
+            RETURN ?emb, ?i, ?emb.content
+            LIMIT {limite_real}
+            """
+            docs = rows_to_documents(client.run(fallback))
+
+        if not docs:
+            raise ValueError(
+                "No se pudo construir el indice sparse: MillenniumDB no devolvio "
+                "documentos con id de chunk/intervencion y contenido."
+            )
+
         return cls(docs)
 
     def build(self, documents: list[SparseDocument]) -> None:
