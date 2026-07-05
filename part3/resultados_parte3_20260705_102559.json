@@ -1,0 +1,132 @@
+{
+  "parte": 3,
+  "timestamp": "2026-07-05T10:26:14.280336",
+  "top_k": 5,
+  "sparse_strategy": "BM25 propio",
+  "fusion": "Reciprocal Rank Fusion",
+  "rerank": "MMR/Jaccard deterministico, sin LLM",
+  "index_path": "C:\\Users\\benja\\P Masivos\\T2---Procesamiento-de-Datos-Masivos\\part3\\sparse_store\\bm25_index.pkl.gz",
+  "questions": [
+    {
+      "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+      "sparse": {
+        "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+        "answer": "No se encontró contexto relevante que mencione explícitamente CAE, condonación y FES en educación superior. Por lo tanto, no puedo proporcionar intervenciones específicas sobre este tema.",
+        "retrieved_chunks": []
+      },
+      "hybrid": {
+        "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+        "answer": "La intervención que menciona explícitamente el CAE (Crédito con Aval del Estado), la condonación y el FES (Fondo de Educación Superior) en educación superior es la siguiente:\n\n- Un parlamentario del Partido Evolución Política (Evópoli) critica la propuesta del gobierno, señalando que no se trata del fin del CAE ni de una solución responsable, y menciona que el Ejecutivo ha decidido amarrar la condonación del CAE con el nuevo financiamiento de la educación superior a través del FES. Además, expresa su preocupación por cómo este nuevo sistema funcionará como un impuesto al trabajo y al esfuerzo de los estudiantes. Esta intervención es la única que aborda estos temas de manera explícita [INT-null]. \n\nNo hay otras intervenciones en el contexto proporcionado que mencionen estos términos.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "null",
+            "chunk_id": "null",
+            "speaker": "",
+            "party": "Partido Evolución Política (Evópoli)",
+            "chamber": "",
+            "session_date": "",
+            "score": 0.7398222222222222,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 20,
+              "dense_distance": 0.177378,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.28560886599377877,
+              "lexical_overlap": 0.5555555555555556,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, llegaron al poder con grandes eslóganes, como educación gratuita y de calidad. Convencieron a miles de chilenos con la ilusión de que los problemas de financiamiento en la educación superior se acabarían de un plumazo. Pero cuando les tocó gobernar, cuando tuvieron que hacerse cargo de la realidad, la verdad quedó en evidencia: no tienen cómo hacerlo. Lo que hoy nos presentan no es el fin del CAE, ni mucho menos una solución responsable, sino que es simplemente la confirmación de que este gobierno se quedó sin ideas y sin rumbo. Se trata de una propuesta mal diseñada, que se suma a la larga lista de iniciativas buenistas que han generado más frustración que soluciones. Lo más grave: es un proyecto que se basa en eslóganes, pero que será de un daño profundo para los alumnos, sus familias, las instituciones y para el propio Estado. En lo técnico, el error es evidente. El Ejecutivo ha decidido amarrar dos discusiones distintas en un mismo proyecto: la condonación del CAE y el nuevo financiamiento de la educación superior. Una cosa es discutir cómo financiamos la educación superior de manera sostenible, pero otra, muy distinta, es resolver la situación de quienes ya cargan con deuda. Mezclarlo todo solo demuestra improvisación, y no quiero creer que mala fe. Sin embargo, lo más preocupante es la naturaleza de este nuevo sistema, que en la práctica no es otra cosa que un impuesto: un impuesto al trabajo y al esfuerzo, que recaerá con más fuerza en la clase media. Durante veinte años, lo que en muchos casos dura el plazo de un crédito hipotecario completo, quienes estudien con FES estarán obligados a devolver un porcentaje de sus ingresos, aunque ese monto supere con creces lo que al Estado invirtió en su formación. Eso no es justicia social, sino un castigo para quienes buscan surgir a través del mérito y la educación. Esto es el gobierno actuando directamente en contra de quienes más necesitan un Estado eficiente y responsable. Peor aún: este proyecto elimina las becas que hoy permiten que miles de jóvenes de clase media puedan estudiar. Desaparecen las becas Bicentenario, Nuevo Milenio y Juan Gómez Milla, que han"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+      "sparse": {
+        "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+        "answer": "No se encontró contexto relevante sobre la discusión de la Ley Nain-Retamal y la legítima defensa de Carabineros. Por lo tanto, no puedo proporcionar información sobre este tema.",
+        "retrieved_chunks": []
+      },
+      "hybrid": {
+        "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+        "answer": "La discusión sobre la \"ley Naín-Retamal\" se centra en su propuesta de otorgar amparo a la presunción legal de legítima defensa privilegiada, lo que busca reforzar la función de Carabineros. Un parlamentario del Partido Socialista de Chile menciona que, aunque el proyecto tiene limitaciones, como el uso y marcado de municiones, establece una obligación para Carabineros que va más allá de controlar el orden público y resguardar la seguridad, incluyendo la defensa de los propios carabineros que se encuentran de franco. A pesar de reconocer que hay particularidades que deben ser corregidas en los trámites sucesivos, el parlamentario expresa su intención de aprobar el proyecto de ley [INT-null]. \n\nNo se presentan otras posturas o críticas en el contexto proporcionado, por lo que no hay un balance de opiniones sobre el tema.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "null",
+            "chunk_id": "null",
+            "speaker": "",
+            "party": "Partido Socialista de Chile",
+            "chamber": "",
+            "session_date": "",
+            "score": 0.7942285714285714,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 20,
+              "dense_distance": 0.15682,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.28560886599377877,
+              "lexical_overlap": 0.8571428571428571,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "“ley Naín-Retamal” al Código Penal otorga amparo a la presunción legal de legítima defensa privilegiada. Por eso, el proyecto en discusión busca reforzar la función de Carabineros. Si bien tiene algunas limitaciones, como el uso y marcado de municiones, la propuesta establece una obligación que debería tener Carabineros no solo para poder controlar el orden público y resguardar la seguridad pública, sino también como medio de defensa para los propios carabineros que se encuentran de franco. Así que, si bien el proyecto de ley tiene algunas particularidades que deben ser corregidas en los trámites sucesivos, particularmente lo voy a aprobar. He dicho."
+          }
+        ]
+      }
+    },
+    {
+      "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+      "sparse": {
+        "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+        "answer": "No se encontró contexto relevante sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos. Por lo tanto, no puedo proporcionar información al respecto.",
+        "retrieved_chunks": []
+      },
+      "hybrid": {
+        "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+        "answer": "El contexto proporcionado no contiene información específica sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos. Por lo tanto, no puedo responder a la pregunta.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "null",
+            "chunk_id": "null",
+            "speaker": "",
+            "party": "Partido Renovación Nacional",
+            "chamber": "",
+            "session_date": "",
+            "score": 0.6396,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 20,
+              "dense_distance": 0.165438,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.28560886599377877,
+              "lexical_overlap": 0.0,
+              "matched_terms": [],
+              "score_direction": "higher_is_better"
+            },
+            "text": "de esta iniciativa. Es más, un informe de la Biblioteca del Congreso Nacional afirma que el costo real del proyecto supera en más de 10 por ciento lo proyectado por el gobierno del Presidente Boric, lo cual, evidentemente, como Cámara que fiscaliza los actos de gobierno, nos debe llamar, a lo menos, a la reflexión. Esas son las dudas que trae aparejada esta iniciativa, que -reitero- es loable. Esperamos que esas inquietudes sean debidamente esclarecidas por el Ejecutivo, ya que las personas con severos grados de dependencia y sus cuidadores requieren respuestas claras, eficientes y justas del Estado. Espero que este gobierno por fin se haga cargo y esté a la altura de las circunstancias. He dicho."
+          }
+        ]
+      }
+    }
+  ]
+}

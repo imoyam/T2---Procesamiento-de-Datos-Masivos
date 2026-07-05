@@ -39,10 +39,11 @@ class DenseRetriever:
         # 2. La query definitiva con el casteo explícito tensorFloat()
         query = f"""
         MATCH (?i :Intervention)-[:HasEmbedding]->(?emb :Embedding),
-              (?i)-[:DeliveredBy]->(?pos :Position)-[:Represents]->(?pp :PoliticalParty)
+              (?i)-[:DeliveredBy]->(?pos :Position)-[:Represents]->(?pp :PoliticalParty),
+              (?person :Person)-[:ServedAs]->(?pos)
         LET ?dist = COSINE_DISTANCE(?emb.value, tensorFloat("{vector_str}"))
         ORDER BY ?dist
-        RETURN ?emb.chunk_id, ?i.id, ?emb.content, ?pp.name, ?dist
+        RETURN ?emb, ?i, ?emb.content, ?person.full_name, ?pp.name, ?pos.role, ?dist
         LIMIT {k}
         """
         filas = self.client.run(query)
@@ -55,12 +56,14 @@ class DenseRetriever:
                 vals = list(f.values())
                 
                 # Manejador robusto: Si la BD lo devuelve separado en múltiples columnas
-                if len(vals) >= 5:
+                if len(vals) >= 7:
                     c_id = str(vals[0])
                     i_id = str(vals[1])
                     texto = str(vals[2])
-                    party = str(vals[3])
-                    dist_str = str(vals[4])
+                    speaker = str(vals[3])
+                    party = str(vals[4])
+                    chamber = str(vals[5])
+                    dist_str = str(vals[6])
                     
                 # Manejador robusto: Si la BD lo devuelve aplastado en 1 columna (separado por comas)
                 elif len(vals) == 1:
@@ -68,8 +71,10 @@ class DenseRetriever:
                     c_id = str(parsed[0])
                     i_id = str(parsed[1])
                     texto = str(parsed[2])
-                    party = str(parsed[3])
-                    dist_str = str(parsed[4])
+                    speaker = str(parsed[3]) if len(parsed) > 3 else ""
+                    party = str(parsed[4]) if len(parsed) > 4 else ""
+                    chamber = str(parsed[5]) if len(parsed) > 5 else ""
+                    dist_str = str(parsed[6]) if len(parsed) > 6 else "null"
                 else:
                     continue
                 
@@ -84,7 +89,9 @@ class DenseRetriever:
                     chunk_id=c_id, 
                     intervention_id=i_id, 
                     text=texto, 
-                    party=party_clean, 
+                    speaker="" if speaker == "null" else speaker,
+                    party=party_clean,
+                    chamber="" if chamber == "null" else chamber,
                     score=score
                 ))
                 

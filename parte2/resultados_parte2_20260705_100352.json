@@ -1,0 +1,59 @@
+{
+  "parte": 2,
+  "estrategia": "GraphRAG",
+  "top_k": 5,
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-07-05T10:03:52.371518",
+  "resultados": {
+    "patron_a": {
+      "patron_a_partido": {
+        "question": "¿Qué opina el Partido Socialista de Chile sobre la reforma de pensiones?",
+        "party_filter": "Partido Socialista de Chile",
+        "answer": "Error al generar la respuesta.",
+        "retrieved_ids": [
+          "null",
+          "null",
+          "null",
+          "null",
+          "null"
+        ]
+      },
+      "patron_a_camara": {
+        "question": "¿Qué se ha debatido sobre el acceso al agua?",
+        "chamber_filter": "Senado",
+        "retrieved_ids": []
+      }
+    },
+    "patron_b": {
+      "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: pene de **nito. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}"
+    },
+    "patron_c": {
+      "patron_c_edad": {
+        "question": "¿Qué se dice sobre el cambio climático y medio ambiente?",
+        "jovenes_ids": [],
+        "mayores_ids": []
+      },
+      "patron_c_temporal": {
+        "question": "¿Qué se ha discutido sobre la violencia en La Araucanía?",
+        "ids_2018_2019": [],
+        "ids_2022_2023": []
+      },
+      "patron_c_evolucion": {
+        "question": "¿Qué se ha discutido sobre la violencia en La Araucanía?",
+        "years": {
+          "2025": [
+            "null",
+            "null"
+          ],
+          "2026": [
+            "null",
+            "null"
+          ]
+        }
+      }
+    },
+    "comparacion_2_2": {
+      "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: pene de **nito. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}"
+    }
+  }
+}
