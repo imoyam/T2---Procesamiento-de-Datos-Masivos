@@ -1,0 +1,769 @@
+{
+  "parte": 3,
+  "timestamp": "2026-07-05T18:14:43.984065",
+  "top_k": 5,
+  "sparse_strategy": "BM25 propio",
+  "fusion": "Reciprocal Rank Fusion",
+  "rerank": "MMR/Jaccard deterministico, sin LLM",
+  "index_path": "C:\\Users\\ignac\\Desktop\\procesamiento\\T2---Procesamiento-de-Datos-Masivos\\part3\\sparse_store\\bm25_index.pkl.gz",
+  "questions": [
+    {
+      "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+      "sparse": {
+        "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+        "answer": "Las intervenciones que mencionan explícitamente el CAE, la condonación y el FES en educación superior son las siguientes:\n\n1. **Intervención del Partido Frente Amplio**: Se menciona la condonación de deudas educativas y se discute el FES como un nuevo instrumento que reemplaza al CAE. Se habla de la posibilidad de condonaciones parciales de deuda para quienes se adscriban desde el CAE u otros créditos antiguos, dependiendo de su situación [INT-].\n\n2. **Intervención del Partido Renovación Nacional**: Se critica la transformación del CAE y se argumenta que el FES es un mal diseño. Se menciona que el FES no debe ser visto como una condonación del CAE, sino como una transformación de este [INT-].\n\n3. **Intervención del Partido por la Democracia**: Se argumenta que es urgente poner fin al CAE, mencionando que ha generado un gran estrés financiero y que el nuevo instrumento FES permitirá a los estudiantes acceder a financiamiento sin pago de matrícula ni arancel durante sus estudios, con un compromiso de retribución posterior [INT-].\n\nEstas intervenciones reflejan diferentes posturas sobre el CAE, la condonación de deudas y el FES en el contexto de la educación superior en Chile.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Frente Amplio",
+            "chamber": "",
+            "session_date": "",
+            "score": 34.461668008846544,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 1,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "financiamiento para la educación superior (FES) busca reemplazar los créditos estudiantiles (como el CAE o el fondo solidario), beneficiando a los estudiantes que lo necesiten, quienes deben matricularse en una institución adscrita al nuevo instrumento y solicitar el beneficio con el compromiso de retribuir una vez insertos en el mercado laboral. También pueden acceder los estudiantes que se encuentren actualmente financiando su educación superior a través del CAE o del fondo solidario. El FES reemplazará a los instrumentos de crédito actuales. No genera una deuda formal para los estudiantes que lo utilicen y no considera a los bancos. No hay un préstamo ni tasas de interés, como es el caso de los créditos actuales, y no requiere de aval o garantía para su asignación. El instrumento cubre la duración formal de la carrera más un año adicional. Se puede realizar un único cambio de carrera. En esos casos se cubre 1,5 veces la duración de la carrera más larga más un año adicional. Los beneficiados con el FES asumen la obligación de retribuir una vez transcurridos 12 meses después del egreso, de la deserción o de la eliminación académica. Las personas contribuirán al FES en proporción a sus ingresos (hasta el 8 por ciento) y bajo la regla de dos años de contribución por semestre cursado, por un plazo máximo de 20 años. La retribución se realizará a través de la operación renta, previo descuento mensual por planilla para trabajadores dependientes, y de retención aplicada a boleta de honorarios en el caso de trabajadores independientes. Las personas estarán exentas de la retribución si su ingreso bruto mensual es igual o menor a 7,5 UTM. 2) Un plan de reorganización y condonación de las deudas educativas. La iniciativa propone un plan de reorganización y condonación de deudas educativas con condonación total o parcial, de acuerdo a su realidad, para todas las personas deudoras de créditos estudiantiles. El plan comprende tres tipos de condonación: inicial, mensual y por pago anticipado. La condonación inicial abarca a todas las personas que adscriban al plan, según la situación en la que se encuentren y"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Frente Amplio",
+            "chamber": "",
+            "session_date": "",
+            "score": 33.5796447151591,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 2,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "condonación de deudas educativas; sin embargo, hubo divergencias en cuanto al nuevo instrumento de financiamiento público para la educación superior. Los diputados que manifestaron una postura contraria al fondo de educación superior (FES), que busca reemplazar al CAE, criticaron la falta de claridad sobre la deuda, la imposibilidad de prepago, la obligación de endeudarse completamente y que el sistema se asemeja más a un impuesto que a un crédito, ya que el pago se basa en los ingresos y no en una deuda concreta. Asimismo, se presentaron cuestionamientos relacionados con la equidad tributaria y la afectación de tributos a fines específicos. Además, se plantearon dudas sobre la sostenibilidad financiera del sistema y el impacto de la regulación de aranceles en la calidad y diversidad de la educación, alertando sobre posibles consecuencias negativas, como la reducción de oferta educativa o problemas económicos en las instituciones. Quienes manifestaron una opinión favorable al instrumento consideraron que reemplaza becas y créditos actuales por un instrumento único, con contribuciones contingentes al ingreso. Sostuvieron que los estudiantes pueden optar voluntariamente por el FES, que el Estado financia el arancel regulado y luego el estudiante contribuye anualmente según sus ingresos, retenidos por el empleador a través del Servicio de Impuestos Internos. Adicionalmente, se incluyen condonaciones parciales de deuda para quienes se adscriban desde el CAE u otros créditos antiguos (Corfo o fondo solidario), dependiendo de su situación. Finalmente, se argumentó que el FES no se trata de un impuesto, sino de un fondo revolvente con contraprestación. En definitiva, el proyecto aprobado contiene 37 artículos permanentes, 30 disposiciones transitorias y dos componentes: 1) Un nuevo instrumento de financiamiento público para la educación superior (FES), que reemplaza los créditos estudiantiles y unifica instrumentos de financiamiento. El nuevo instrumento de financiamiento para la educación superior (FES) busca reemplazar los créditos estudiantiles (como el CAE o el fondo solidario), beneficiando a los estudiantes que lo necesiten, quienes deben matricularse en una"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Renovación Nacional",
+            "chamber": "",
+            "session_date": "",
+            "score": 32.867276026260384,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 3,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, estimados ministros, estamos teniendo una discusión forzada. El gobierno se ha negado a separar el proyecto, lo que nos obliga a dar una misma discusión respecto de dos problemas que son distintos. Por una parte, la transformación del CAE, porque hay que decirles “a los niños” que no es condonación del CAE, sino que es una transformación del CAE, y, por la otra, el financiamiento de la educación superior. El FES es un mal diseño, que debe ser rechazado. Se trata de una mala política pública, que ha sido ampliamente criticada por instituciones y expertos, quienes ven con preocupación cómo peligra la sostenibilidad y la calidad del sistema con este proyecto. No debemos reemplazar el CAE por una política peor como el FES, que es inconveniente para las familias, las instituciones de educación superior y el fisco. Se trata del impuesto a los graduados, que obligará al 40 por ciento de los beneficiarios a pagar más que el costo de sus carreras por hasta veinte años. Se trata de un impuesto cuyo monto es indeterminado y bajo el cual un 28,5 por ciento de los egresados pagará entre 1,5 y 3,5 veces su carrera. El financiamiento del sistema depende de que muchos estudiantes paguen muy por encima de lo que el fisco gastó en sus estudios. La calidad y autonomía de las instituciones de educación superior también se pone en riesgo, al restringir su financiamiento y prohibir el copago de los deciles de mayores ingresos. Esta decisión afectará la calidad y la investigación, especialmente de las mejores instituciones, así como de las que aspiran a serlo. Les estamos cortando las alas. Fijar el arancel es nivelar hacia abajo. Mientras otros países tienen una educación superior cada vez más competitiva, Chile se irá quedando atrás. Y, lo que es peor, las instituciones quedarán al arbitrio de las autoridades de turno, perdiendo por completo su autonomía. Se excluye también la educación online, que hoy sí tiene financiamiento, la que es impartida por instituciones de alta acreditación y que representa el 12 por ciento de la matrícula de pregrado, y se eliminan todas las becas de arancel. Por tanto, acá se tiene FES, se tiene gra"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido por la Democracia",
+            "chamber": "",
+            "session_date": "",
+            "score": 28.85750291242206,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 4,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, creo que es urgente poner fin al CAE, porque ha significado un despilfarro de recursos estatales, ha endeudado a millones de familias chilenas y ha generado un gran estrés financiero para las instituciones de educación superior. Este proyecto responde a la necesidad de contar con un instrumento de financiamiento estudiantil más eficiente, responsable y justo, que avance en garantizar el derecho social a la educación superior y en mejorar la recuperación de los recursos públicos invertidos. El nuevo instrumento de financiamiento que propone esta iniciativa permitirá al Estado ahorrar cerca de 3 billones de pesos en diez años. Además, establece para los estudiantes, una vez que estén titulados, el pago de un 4 por ciento de sus ingresos, versus el 14 por ciento que deben pagar hoy. El nuevo instrumento de financiamiento público para la educación superior (FES) viene a enfrentar esta problemática. Permitirá a las y los estudiantes que no califiquen a la gratuidad acceder a un financiamiento público para poder cursar una carrera de educación superior sin pago alguno de matrícula ni arancel durante sus estudios, con el compromiso de retribuir tras su egreso y una vez que estén insertos en el mercado laboral. Esta redistribución será contingente al ingreso y se calculará como porcentaje del sueldo, y a los que ganen menos de quinientos mil pesos no se les descontará. Para avanzar hacia un nuevo sistema de financiamiento de la educación superior se proponen mecanismos de reorganización y condonación de deudas del actual sistema, tanto del CAE como del Fondo Solidario de Crédito Universitario y de la Corfo, con el objetivo de aliviar la situación de los deudores, especialmente de los más afectados, e incentivar el pago mediante condiciones acordes con la realidad de cada persona. En la Comisión de Hacienda se rechazó un artículo, que es importante que se reponga, porque regula el límite de copago, estableciendo que las instituciones no podrán efectuar cobros de aranceles ni matrículas a las personas que cursen sus estudios con FES y provengan de los nueve primeros deciles de ingresos, mientras la duración de sus estudios se mantenga dentro del período comprendido en la duración formal de la carrera, más un año adicional. Sin este"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Por la Democracia",
+            "chamber": "",
+            "session_date": "",
+            "score": 28.85750291242206,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 5,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, creo que es urgente poner fin al CAE, porque ha significado un despilfarro de recursos estatales, ha endeudado a millones de familias chilenas y ha generado un gran estrés financiero para las instituciones de educación superior. Este proyecto responde a la necesidad de contar con un instrumento de financiamiento estudiantil más eficiente, responsable y justo, que avance en garantizar el derecho social a la educación superior y en mejorar la recuperación de los recursos públicos invertidos. El nuevo instrumento de financiamiento que propone esta iniciativa permitirá al Estado ahorrar cerca de 3 billones de pesos en diez años. Además, establece para los estudiantes, una vez que estén titulados, el pago de un 4 por ciento de sus ingresos, versus el 14 por ciento que deben pagar hoy. El nuevo instrumento de financiamiento público para la educación superior (FES) viene a enfrentar esta problemática. Permitirá a las y los estudiantes que no califiquen a la gratuidad acceder a un financiamiento público para poder cursar una carrera de educación superior sin pago alguno de matrícula ni arancel durante sus estudios, con el compromiso de retribuir tras su egreso y una vez que estén insertos en el mercado laboral. Esta redistribución será contingente al ingreso y se calculará como porcentaje del sueldo, y a los que ganen menos de quinientos mil pesos no se les descontará. Para avanzar hacia un nuevo sistema de financiamiento de la educación superior se proponen mecanismos de reorganización y condonación de deudas del actual sistema, tanto del CAE como del Fondo Solidario de Crédito Universitario y de la Corfo, con el objetivo de aliviar la situación de los deudores, especialmente de los más afectados, e incentivar el pago mediante condiciones acordes con la realidad de cada persona. En la Comisión de Hacienda se rechazó un artículo, que es importante que se reponga, porque regula el límite de copago, estableciendo que las instituciones no podrán efectuar cobros de aranceles ni matrículas a las personas que cursen sus estudios con FES y provengan de los nueve primeros deciles de ingresos, mientras la duración de sus estudios se mantenga dentro del período comprendido en la duración formal de la carrera, más un año adicional. Sin este"
+          }
+        ]
+      },
+      "hybrid": {
+        "question": "Identifica intervenciones que mencionen explicitamente CAE, condonacion y FES en educacion superior.",
+        "answer": "Las intervenciones que mencionan explícitamente el CAE, la condonación y el FES en educación superior son las siguientes:\n\n1. **Intervención del Partido Comunista de Chile**: Esta intervención menciona el CAE y el FES, destacando que el proyecto que crea el FES pone fin al CAE y busca aliviar la deuda de los estudiantes. También se habla de la condonación de deudas educativas y cómo el FES cambiará la lógica del financiamiento educativo [INT-i54542].\n\n2. **Intervención del Partido Frente Amplio**: En esta intervención se describe el FES como un reemplazo de los créditos estudiantiles, incluyendo el CAE, y se menciona la condonación de deudas educativas. Se explica cómo funcionará el nuevo sistema y las condiciones para los beneficiarios [INT-i54520].\n\n3. **Intervención del Partido Evolución Política (Evópoli)**: Aunque esta intervención critica el proyecto del FES, menciona el CAE y la condonación, argumentando que el proyecto del gobierno mezcla discusiones sobre la condonación del CAE y el nuevo financiamiento de la educación superior [INT-i54528].\n\nEstas intervenciones reflejan diferentes posturas sobre el CAE, la condonación y el FES en el contexto de la educación superior en Chile.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "i54528",
+            "chunk_id": "i54528_c0",
+            "speaker": "Francisco Undurraga Gazitúa",
+            "party": "Partido Evolución Política (Evópoli)",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.7398222222222222,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 1,
+              "dense_distance": 0.168027,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.01639344262295082,
+              "lexical_overlap": 0.5555555555555556,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, llegaron al poder con grandes eslóganes, como educación gratuita y de calidad. Convencieron a miles de chilenos con la ilusión de que los problemas de financiamiento en la educación superior se acabarían de un plumazo. Pero cuando les tocó gobernar, cuando tuvieron que hacerse cargo de la realidad, la verdad quedó en evidencia: no tienen cómo hacerlo. Lo que hoy nos presentan no es el fin del CAE, ni mucho menos una solución responsable, sino que es simplemente la confirmación de que este gobierno se quedó sin ideas y sin rumbo. Se trata de una propuesta mal diseñada, que se suma a la larga lista de iniciativas buenistas que han generado más frustración que soluciones. Lo más grave: es un proyecto que se basa en eslóganes, pero que será de un daño profundo para los alumnos, sus familias, las instituciones y para el propio Estado. En lo técnico, el error es evidente. El Ejecutivo ha decidido amarrar dos discusiones distintas en un mismo proyecto: la condonación del CAE y el nuevo financiamiento de la educación superior. Una cosa es discutir cómo financiamos la educación superior de manera sostenible, pero otra, muy distinta, es resolver la situación de quienes ya cargan con deuda. Mezclarlo todo solo demuestra improvisación, y no quiero creer que mala fe. Sin embargo, lo más preocupante es la naturaleza de este nuevo sistema, que en la práctica no es otra cosa que un impuesto: un impuesto al trabajo y al esfuerzo, que recaerá con más fuerza en la clase media. Durante veinte años, lo que en muchos casos dura el plazo de un crédito hipotecario completo, quienes estudien con FES estarán obligados a devolver un porcentaje de sus ingresos, aunque ese monto supere con creces lo que al Estado invirtió en su formación. Eso no es justicia social, sino un castigo para quienes buscan surgir a través del mérito y la educación. Esto es el gobierno actuando directamente en contra de quienes más necesitan un Estado eficiente y responsable. Peor aún: este proyecto elimina las becas que hoy permiten que miles de jóvenes de clase media puedan estudiar. Desaparecen las becas Bicentenario, Nuevo Milenio y Juan Gómez Milla, que han"
+          },
+          {
+            "intervention_id": "i54542",
+            "chunk_id": "i54542_c0",
+            "speaker": "Boris Barrera Moreno",
+            "party": "Partido Comunista de Chile",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.6933620989827856,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 2,
+              "dense_rank": 4,
+              "dense_distance": 0.17081,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015625,
+              "lexical_overlap": 0.5555555555555556,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, saludo a todos los estudiantes que asisten a esta sesión representando a sus diferentes organizaciones. Hoy estamos frente a un debate histórico: una deuda que se arrastra en nuestro país, o que arrastra a miles de estudiantes y familias que se vieron obligadas a endeudarse para poder estudiar. El proyecto que crea el Fondo de Financiamiento para la Educación Superior (FES), y que pone fin al Crédito con Aval del Estado (CAE), es una respuesta concreta a una de las demandas más profundas que han levantado las estudiantes y los estudiantes en nuestro país en las últimas décadas: terminar con el endeudamiento abusivo como condición para estudiar. El CAE ha dejado un saldo doloroso: más de 1.600.000 personas endeudadas de por vida, en su mayoría mujeres y jóvenes de sectores populares. En el distrito No 9, que represento, hay más de 60.000 vecinos y vecinas endeudados; en Independencia, más de 550.000; en Huechuraba y Lo Prado, más de 6.000; en Cerro Navia, 7.300, y en Conchalí, Renca, Quinta Normal y Recoleta existen más de 8.000 endeudados. ¿Cómo no nos va a preocupar ni nos va a mantener indignados esta situación? El proyecto que discutimos hoy, el FES, cambia la lógica. Ya no habrá bancos involucrados, ya no se pagarán aranceles ni matrículas durante los estudios, el reembolso se calculará de acuerdo con el monto de ingreso real, o sea, quien tenga un ingreso por debajo de 500.000 pesos, aproximadamente, no pagará, y quien tenga un salario mayor lo hará en una proporción justa y considerablemente menor a lo que se paga hoy con el CAE. Además, el sistema establece límites claros en el pago, y también en cómo se extingue la deuda, así como beneficios tributarios para quien tenga pagado el CAE. El FES, además, incorpora a quienes arrastran deudas del Fondo Solidario de Crédito Universitario y de los créditos Corfo. Todos podrían reorganizar sus compromisos, con posibilidad de condonación y reglas claras, transparentes y justas. El FES no solo alivia a las familias; también orden"
+          },
+          {
+            "intervention_id": "i54520",
+            "chunk_id": "i54520_c4",
+            "speaker": "Emilia Schneider Videla",
+            "party": "Partido Frente Amplio",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.6750657899752239,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 3,
+              "dense_rank": 6,
+              "dense_distance": 0.172561,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015151515151515152,
+              "lexical_overlap": 0.5555555555555556,
+              "matched_terms": [
+                "cae",
+                "condonacion",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "financiamiento para la educación superior (FES) busca reemplazar los créditos estudiantiles (como el CAE o el fondo solidario), beneficiando a los estudiantes que lo necesiten, quienes deben matricularse en una institución adscrita al nuevo instrumento y solicitar el beneficio con el compromiso de retribuir una vez insertos en el mercado laboral. También pueden acceder los estudiantes que se encuentren actualmente financiando su educación superior a través del CAE o del fondo solidario. El FES reemplazará a los instrumentos de crédito actuales. No genera una deuda formal para los estudiantes que lo utilicen y no considera a los bancos. No hay un préstamo ni tasas de interés, como es el caso de los créditos actuales, y no requiere de aval o garantía para su asignación. El instrumento cubre la duración formal de la carrera más un año adicional. Se puede realizar un único cambio de carrera. En esos casos se cubre 1,5 veces la duración de la carrera más larga más un año adicional. Los beneficiados con el FES asumen la obligación de retribuir una vez transcurridos 12 meses después del egreso, de la deserción o de la eliminación académica. Las personas contribuirán al FES en proporción a sus ingresos (hasta el 8 por ciento) y bajo la regla de dos años de contribución por semestre cursado, por un plazo máximo de 20 años. La retribución se realizará a través de la operación renta, previo descuento mensual por planilla para trabajadores dependientes, y de retención aplicada a boleta de honorarios en el caso de trabajadores independientes. Las personas estarán exentas de la retribución si su ingreso bruto mensual es igual o menor a 7,5 UTM. 2) Un plan de reorganización y condonación de las deudas educativas. La iniciativa propone un plan de reorganización y condonación de deudas educativas con condonación total o parcial, de acuerdo a su realidad, para todas las personas deudoras de créditos estudiantiles. El plan comprende tres tipos de condonación: inicial, mensual y por pago anticipado. La condonación inicial abarca a todas las personas que adscriban al plan, según la situación en la que se encuentren y"
+          },
+          {
+            "intervention_id": "i54547",
+            "chunk_id": "i54547_c0",
+            "speaker": "Jorge Alejandro Saffirio Espinoza",
+            "party": "Partido Demócrata Cristiano",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.6636011687812379,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 4,
+              "dense_rank": 5,
+              "dense_distance": 0.172402,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015384615384615385,
+              "lexical_overlap": 0.4444444444444444,
+              "matched_terms": [
+                "cae",
+                "educacion",
+                "fes",
+                "superior"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, desde que tengo memoria, entre muchas familias de nuestro país, la frase “la educación es la única herencia que le puedo dejar a mis hijos” es común. Todos tenemos conciencia de que la única herramienta que puede ayudar a superar las necesidades en nuestro país no es material, sino que es el conocimiento para desarrollarse profesionalmente. Y aunque estoy seguro de que hoy escucharemos duros discursos contra el CAE y el nivel de endeudamiento que genera entre los profesionales jóvenes, es justo reconocer su importancia como primer paso en el acceso casi universal a la educación superior que hoy tenemos. Ello se debe a que hasta el año 2000 la matrícula total en universidades de nuestro país era cercana al 10 por ciento. Esa situación ponía a la educación superior como un privilegio al que pocas familias podían acceder, lo que afectaba principalmente a la clase media. Eso se solucionó en parte con el CAE. Ese crédito, que hoy satanizamos, significó un avance sustancial en el acceso universal a la educación superior en un momento de nuestra historia. Considero que el Presidente Ricardo Lagos hizo bien en promoverlo y defenderlo, pues permitió que los hijos de trabajadores de clase media estudiaran en la universidad. Y que quede claro, colegas: decir que el CAE fue una solución no significa plantear que fue una panacea que debemos perpetuar, sino que es reconocer el trabajo de muchos que, con visión de futuro, dieron el puntapié inicial para que miles de familias en nuestro país pudieran tener al primer hijo profesional y con ello salir de la pobreza. Sin embargo, es cierto también que este crédito ha generado problemas enormes en muchos profesionales. Hoy, debemos resolver eso en este Congreso. Bajo esa premisa, el FES viene a convertirse en una herramienta que permite, a través de un financiamiento estatal, un tipo de crédito o beneficio especial, que aquellos que antes solo debían endeudarse con bancos o a través del CAE, por no tener gratuidad, hoy puedan optar a la educación superior a través del financiamiento estatal. Por ello creo que es necesario dar este paso, esta señal. Soy un convencido de que, desde ese primer paso, en el 2005, hasta hoy es necesario reconocer la historia, pero también es necesario seguir dando pasos que garanticen que nuestra"
+          },
+          {
+            "intervention_id": "i60259",
+            "chunk_id": "i60259_c0",
+            "speaker": "Gustavo Sanhueza Dueñas",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.61946568914956,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 5,
+              "dense_rank": 2,
+              "dense_distance": 0.168576,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.016129032258064516,
+              "lexical_overlap": 0.0,
+              "matched_terms": [],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor SANHUEZA.- Gracias, Presidente.La Secretaría ha manifestado que la indicación incide en la administración financiera, pero, Presidente, si se aplica lo que dispone, significa una reducción del gasto. Por lo tanto, creo que es absolutamente admisible.<br/>Además, todos sabemos lo que ha pasado en el último tiempo en los establecimientos educacionales, donde tenemos hechos de violencia, están secuestrando a los estudiantes, se les está impidiendo desarrollar sus actividades académicas.<br/>Por eso es muy importante mandar esta señal para que aquellos alumnos que hayan estado involucrados en hechos de violencia que produzcan lesiones o hayan sido sancionados por uso, porte, posesión y tenencia de armas o artefactos incendiarios no tengan derecho a gratuidad.<br/>Creo que nuestro país necesita avanzar para que las personas que incurran en estas faltas efectivamente reciban una sanción o por lo menos no obtengan beneficios por parte del Estado, Presidente.<br/>"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+      "sparse": {
+        "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+        "answer": "La discusión sobre la Ley Nain-Retamal y la legítima defensa de Carabineros ha sido compleja y ha generado diversas posturas entre los parlamentarios. \n\nPor un lado, se argumenta que la Ley Nain-Retamal otorga un marco legal que ampara la presunción de legítima defensa privilegiada para los carabineros, lo que les permite actuar con mayor seguridad en situaciones de riesgo. Un parlamentario del Partido Socialista de Chile destacó que el proyecto en discusión busca reforzar la función de Carabineros y que, aunque tiene limitaciones, es importante para garantizar su defensa, incluso cuando están de franco [INT-]. \n\nPor otro lado, el senador Coloma del Partido Unión Demócrata Independiente recordó que durante la tramitación de la Ley Nain-Retamal, quienes apoyaban la ley fueron acusados de promover una lógica de \"gatillo fácil\". Sin embargo, mencionó que, tras la implementación de la ley, no se han registrado casos de uso irracional de la fuerza, lo que refuerza la idea de que la ley ha permitido una justa defensa de los carabineros [INT-]. Coloma también enfatizó la necesidad de asegurar que los carabineros cuenten con reglas claras que les permitan actuar con protección legal en situaciones de control de disturbios y amenazas a la seguridad pública [INT-].\n\nEn resumen, la Ley Nain-Retamal ha sido vista como un avance en la protección de los carabineros, permitiéndoles actuar con mayor confianza en el cumplimiento de sus funciones, aunque también ha suscitado preocupaciones sobre el uso de la fuerza y la posibilidad de abusos.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Socialista de Chile",
+            "chamber": "",
+            "session_date": "",
+            "score": 34.074543171819315,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 1,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "“ley Naín-Retamal” al Código Penal otorga amparo a la presunción legal de legítima defensa privilegiada. Por eso, el proyecto en discusión busca reforzar la función de Carabineros. Si bien tiene algunas limitaciones, como el uso y marcado de municiones, la propuesta establece una obligación que debería tener Carabineros no solo para poder controlar el orden público y resguardar la seguridad pública, sino también como medio de defensa para los propios carabineros que se encuentran de franco. Así que, si bien el proyecto de ley tiene algunas particularidades que deben ser corregidas en los trámites sucesivos, particularmente lo voy a aprobar. He dicho."
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "",
+            "session_date": "",
+            "score": 31.945639711209928,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 2,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor COLOMA.- Gracias, Presidente.<br/>Admitamos que esta ha sido una forma un poco extraña de enfrentar la tramitación del proyecto, porque estamos en la discusión en particular, pero volvemos a la lógica en general. Si queremos avanzar, me gustaría ir al tema de fondo.<br/>Quiero hacer dos comentarios respecto de las intervenciones. La verdad es que no iba a hablar, pero me incentivé.<br/>Uno, respecto de lo que planteó la senadora Pascual en relación con la Ley Nain-Retamal creo que fue muy oportuna la referencia. Ella hace presente que debió haber pasado por el Tribunal Constitucional.<br/>Pero les quiero recordar que, en ese escenario -a mí me tocó presidir el Senado, y esa fue una de las discusiones más complejas-, quienes éramos partidarios de la Ley Nain-Retamal -recordemos que el artículo 7 fue votado en forma diversa por este Senado, y estaba presente en ese momento la ministra del Interior- fuimos acusados de instaurar la lógica del gatillo fácil. Se dijo que se instalaría un escenario que haría imposible la convivencia, porque los carabineros iban a disparar irracionalmente.<br/>Esa fue la discusión, que fue bien dramática, ¿se acuerdan? Fueron dos días enteros, y finalmente se despachó la Ley Nain-Retamal.<br/>Yo le pregunté posteriormente a la misma ministra si había habido hechos de gatillo fácil, y me reconoció que no, que había habido una justa defensa de carabineros, en virtud de lo cual -al revés de lo que se hacía dicho- se presumía su legítima defensa y no se les formalizaba cada vez que hacían uso de su arma.<br/>Cabe señalar que la formalización suponía el retiro temporal de la función que estaba desarrollando el funcionario, e incluso, algunas veces, el no pago del salario. Ese era el drama por el cual se generaba la imposibilidad de actuar en forma eficiente en la defensa de lo que es el Estado.<br/>Yo quiero recordar por lo menos esa parte de la"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "",
+            "session_date": "",
+            "score": 31.945639711209928,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 3,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor COLOMA.- Gracias, Presidente.<br/>Admitamos que esta ha sido una forma un poco extraña de enfrentar la tramitación del proyecto, porque estamos en la discusión en particular, pero volvemos a la lógica en general. Si queremos avanzar, me gustaría ir al tema de fondo.<br/>Quiero hacer dos comentarios respecto de las intervenciones. La verdad es que no iba a hablar, pero me incentivé.<br/>Uno, respecto de lo que planteó la senadora Pascual en relación con la Ley Nain-Retamal creo que fue muy oportuna la referencia. Ella hace presente que debió haber pasado por el Tribunal Constitucional.<br/>Pero les quiero recordar que, en ese escenario -a mí me tocó presidir el Senado, y esa fue una de las discusiones más complejas-, quienes éramos partidarios de la Ley Nain-Retamal -recordemos que el artículo 7 fue votado en forma diversa por este Senado, y estaba presente en ese momento la ministra del Interior- fuimos acusados de instaurar la lógica del gatillo fácil. Se dijo que se instalaría un escenario que haría imposible la convivencia, porque los carabineros iban a disparar irracionalmente.<br/>Esa fue la discusión, que fue bien dramática, ¿se acuerdan? Fueron dos días enteros, y finalmente se despachó la Ley Nain-Retamal.<br/>Yo le pregunté posteriormente a la misma ministra si había habido hechos de gatillo fácil, y me reconoció que no, que había habido una justa defensa de carabineros, en virtud de lo cual -al revés de lo que se hacía dicho- se presumía su legítima defensa y no se les formalizaba cada vez que hacían uso de su arma.<br/>Cabe señalar que la formalización suponía el retiro temporal de la función que estaba desarrollando el funcionario, e incluso, algunas veces, el no pago del salario. Ese era el drama por el cual se generaba la imposibilidad de actuar en forma eficiente en la defensa de lo que es el Estado.<br/>Yo quiero recordar por lo menos esa parte de la"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Socialista de Chile",
+            "chamber": "",
+            "session_date": "",
+            "score": 28.7199907269625,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 4,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, el objetivo de este proyecto de ley se confunde por algunos diputados que me antecedieron en el uso de la palabra, pues dijeron que autorizaba el porte de armas. Cabe aclarar que el artículo 6° de la ley N° 17.798, que Establece el Control de Armas, autoriza el porte de armas a funcionarios en servicio activos, a funcionarios en retiro y, tras una modificación reciente, también a aspirantes. ¿Qué es lo que hace este proyecto de ley? Obliga a Carabineros de Chile a entregar un arma de cargo a cada uno de sus funcionarios. Es cierto, el proyecto tiene límites de carácter presupuestario, por lo que eventualmente está fuera de las atribuciones de los mocionantes, ya que, al implicar gasto fiscal, es materia de iniciativa exclusiva del Presidente de la República. Sin embargo, el proyecto se armoniza con lo ya dispuesto en la ley N° 21.560, “ley Naín-Retamal”, que en su artículo 7° introdujo un inciso tercero al número 6° del artículo 10 del Código Penal, con el objeto de distinguir y amparar legalmente a los carabineros cuando hacen uso de la fuerza “en razón de su cargo o con motivo u ocasión del cumplimiento de funciones de resguardo de orden público y seguridad pública interior...”. Esta facultad ya la tiene Carabineros. Lo que hace el proyecto de ley es obligar a la institución a entregar un arma de cargo, un arma fiscal, a cada efectivo. Hay funcionarios que tienen su arma particular debidamente inscrita, pero la iniciativa debería reforzar la capacidad que tienen aquellos profesionales, como carabineros encargados en terreno, de poder repeler agresiones. Cabe recordar que la institución, tanto reglamentariamente como en el Código de Ética de Carabineros, autoriza a los efectivos a intervenir cuando existe un hecho que reviste caracteres de delito, estando de franco o cuando no estén en el ejercicio propio de sus funciones. En este sentido, la modificación introducida por la “ley Naín-Retamal” al Código Penal otorga amparo a la presunción legal de legítima defensa privilegiada. Por eso, el proyecto en discusión busca reforzar la función de Carabineros. Si bien tiene algunas limitaciones,"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "",
+            "session_date": "",
+            "score": 22.915207065584962,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 5,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, hoy, más que nunca, debemos alzar la voz para reafirmar nuestro compromiso irrenunciable con la seguridad de quienes día a día protegen a Chile: nuestros carabineros. Hablo desde Ñuble, una región donde sus habitantes valoran el sacrificio de esos hombres y mujeres que, incluso en las zonas más apartadas, arriesgan su integridad para mantener el orden, prevenir el delito y garantizar la paz social. Este proyecto busca regular el uso de la fuerza, pero no lo hace en contra de nuestras instituciones, sino para fortalecer su labor, entregándoles certeza jurídica y respaldo ante escenarios complejos. La “ley Nain-Retamal” fue un avance histórico al reconocer el derecho a la legítima defensa de los funcionarios policiales y de las Fuerzas Armadas frente a agresiones directas, pero hoy debemos ir un paso más allá: asegurar que, al momento de actuar en control de disturbios, resguardar la infraestructura crítica o enfrentar amenazas a la seguridad pública, nuestros carabineros cuenten con reglas claras que, lejos de limitarlos, les permitan ejercer su deber con la protección legal que merecen. ¿Por qué es urgente este proyecto? Porque mientras discutimos, los carabineros siguen enfrentando ataques cobardes con piedras, con armas blancas e, incluso, de fuego. Solo en el último año, más de 2.000 funcionarios han sido lesionados en actos de violencia. En Ñuble he escuchado a familias de carabineros temer por sus seres queridos cada vez que salen a patrullar. ¿Acaso no les debemos, como Estado, un marco legal robusto que los respalde cuando deben usar la fuerza para proteger a la ciudadanía y a sí mismos? Al establecer reglas objetivas protegemos tanto a la población como a los carabineros de acusaciones infundadas. Chile no puede permitirse desproteger a sus carabineros. Este proyecto no es solo un texto legal; es un mensaje claro de que el Estado valora su sacrificio y les entrega las herramientas para cumplir su misión sin vacilaciones. Votemos a favor el proyecto por los carabineros de Ñuble y de todo Chile, por sus familias y por los chilenos"
+          }
+        ]
+      },
+      "hybrid": {
+        "question": "Como se discutio la Ley Nain-Retamal y la legitima defensa de Carabineros?",
+        "answer": "La discusión sobre la Ley Nain-Retamal y la legítima defensa de Carabineros ha sido compleja y ha generado diversas posturas entre los parlamentarios.\n\n1. **Postura a favor de la Ley Nain-Retamal**: Algunos parlamentarios, como los del Partido Unión Demócrata Independiente (UDI), han defendido la ley argumentando que esta establece una presunción de legítima defensa para los carabineros, lo que les permite actuar sin temor a ser formalizados por el uso de su arma en situaciones de riesgo. Se menciona que, a pesar de las críticas iniciales sobre la posibilidad de instaurar una \"lógica del gatillo fácil\", la realidad ha demostrado que no ha habido casos de abuso, sino que se ha reconocido la justa defensa de los carabineros [INT-i57949]. Además, se argumenta que la ley es un avance histórico que proporciona certeza jurídica y respaldo a los carabineros en su labor de mantener el orden público [INT-i53324].\n\n2. **Críticas a la Ley Nain-Retamal**: Por otro lado, desde el Partido Comunista de Chile, se han expresado preocupaciones sobre la falta de rendición de cuentas en la legislación. Se argumenta que la eliminación de este principio es problemática, ya que la rendición de cuentas debería ser un elemento fundamental para el seguimiento y valoración de las actuaciones de Carabineros. También se ha señalado que la ley no pasó por un control preventivo de constitucionalidad, lo que genera inquietudes sobre su validez y aplicación [INT-i57943].\n\n3. **Contexto de la discusión**: La Ley Nain-Retamal fue discutida en un contexto de violencia hacia Carabineros, lo que llevó a la urgencia de establecer un marco legal que los proteja. Se mencionan casos trágicos, como el asesinato de carabineros, que han intensificado el debate sobre la necesidad de una regulación clara sobre el uso de la fuerza [INT-i53352].\n\nEn resumen, la discusión sobre la Ley Nain-Retamal refleja un balance entre la necesidad de proteger a los carabineros en su labor y la importancia de garantizar la rendición de cuentas y el control sobre el uso de la fuerza.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "i55753",
+            "chunk_id": "i55753_c1",
+            "speaker": "Raúl Alfonso Leiva Carvajal",
+            "party": "Partido Socialista de Chile",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.7942285714285714,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 1,
+              "dense_distance": 0.115332,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.01639344262295082,
+              "lexical_overlap": 0.8571428571428571,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "“ley Naín-Retamal” al Código Penal otorga amparo a la presunción legal de legítima defensa privilegiada. Por eso, el proyecto en discusión busca reforzar la función de Carabineros. Si bien tiene algunas limitaciones, como el uso y marcado de municiones, la propuesta establece una obligación que debería tener Carabineros no solo para poder controlar el orden público y resguardar la seguridad pública, sino también como medio de defensa para los propios carabineros que se encuentran de franco. Así que, si bien el proyecto de ley tiene algunas particularidades que deben ser corregidas en los trámites sucesivos, particularmente lo voy a aprobar. He dicho."
+          },
+          {
+            "intervention_id": "i57949",
+            "chunk_id": "i57949_c0",
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.7706169878508587,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 2,
+              "dense_rank": 2,
+              "dense_distance": 0.115393,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.016129032258064516,
+              "lexical_overlap": 0.8571428571428571,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor COLOMA.- Gracias, Presidente.<br/>Admitamos que esta ha sido una forma un poco extraña de enfrentar la tramitación del proyecto, porque estamos en la discusión en particular, pero volvemos a la lógica en general. Si queremos avanzar, me gustaría ir al tema de fondo.<br/>Quiero hacer dos comentarios respecto de las intervenciones. La verdad es que no iba a hablar, pero me incentivé.<br/>Uno, respecto de lo que planteó la senadora Pascual en relación con la Ley Nain-Retamal creo que fue muy oportuna la referencia. Ella hace presente que debió haber pasado por el Tribunal Constitucional.<br/>Pero les quiero recordar que, en ese escenario -a mí me tocó presidir el Senado, y esa fue una de las discusiones más complejas-, quienes éramos partidarios de la Ley Nain-Retamal -recordemos que el artículo 7 fue votado en forma diversa por este Senado, y estaba presente en ese momento la ministra del Interior- fuimos acusados de instaurar la lógica del gatillo fácil. Se dijo que se instalaría un escenario que haría imposible la convivencia, porque los carabineros iban a disparar irracionalmente.<br/>Esa fue la discusión, que fue bien dramática, ¿se acuerdan? Fueron dos días enteros, y finalmente se despachó la Ley Nain-Retamal.<br/>Yo le pregunté posteriormente a la misma ministra si había habido hechos de gatillo fácil, y me reconoció que no, que había habido una justa defensa de carabineros, en virtud de lo cual -al revés de lo que se hacía dicho- se presumía su legítima defensa y no se les formalizaba cada vez que hacían uso de su arma.<br/>Cabe señalar que la formalización suponía el retiro temporal de la función que estaba desarrollando el funcionario, e incluso, algunas veces, el no pago del salario. Ese era el drama por el cual se generaba la imposibilidad de actuar en forma eficiente en la defensa de lo que es el Estado.<br/>Yo quiero recordar por lo menos esa parte de la"
+          },
+          {
+            "intervention_id": "i53324",
+            "chunk_id": "i53324_c0",
+            "speaker": "Marta Pilar Bravo Salinas",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.7381675405007364,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 3,
+              "dense_rank": 5,
+              "dense_distance": 0.122833,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015384615384615385,
+              "lexical_overlap": 0.8571428571428571,
+              "matched_terms": [
+                "carabineros",
+                "defensa",
+                "legitima",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, hoy, más que nunca, debemos alzar la voz para reafirmar nuestro compromiso irrenunciable con la seguridad de quienes día a día protegen a Chile: nuestros carabineros. Hablo desde Ñuble, una región donde sus habitantes valoran el sacrificio de esos hombres y mujeres que, incluso en las zonas más apartadas, arriesgan su integridad para mantener el orden, prevenir el delito y garantizar la paz social. Este proyecto busca regular el uso de la fuerza, pero no lo hace en contra de nuestras instituciones, sino para fortalecer su labor, entregándoles certeza jurídica y respaldo ante escenarios complejos. La “ley Nain-Retamal” fue un avance histórico al reconocer el derecho a la legítima defensa de los funcionarios policiales y de las Fuerzas Armadas frente a agresiones directas, pero hoy debemos ir un paso más allá: asegurar que, al momento de actuar en control de disturbios, resguardar la infraestructura crítica o enfrentar amenazas a la seguridad pública, nuestros carabineros cuenten con reglas claras que, lejos de limitarlos, les permitan ejercer su deber con la protección legal que merecen. ¿Por qué es urgente este proyecto? Porque mientras discutimos, los carabineros siguen enfrentando ataques cobardes con piedras, con armas blancas e, incluso, de fuego. Solo en el último año, más de 2.000 funcionarios han sido lesionados en actos de violencia. En Ñuble he escuchado a familias de carabineros temer por sus seres queridos cada vez que salen a patrullar. ¿Acaso no les debemos, como Estado, un marco legal robusto que los respalde cuando deben usar la fuerza para proteger a la ciudadanía y a sí mismos? Al establecer reglas objetivas protegemos tanto a la población como a los carabineros de acusaciones infundadas. Chile no puede permitirse desproteger a sus carabineros. Este proyecto no es solo un texto legal; es un mensaje claro de que el Estado valora su sacrificio y les entrega las herramientas para cumplir su misión sin vacilaciones. Votemos a favor el proyecto por los carabineros de Ñuble y de todo Chile, por sus familias y por los chilenos"
+          },
+          {
+            "intervention_id": "i53352",
+            "chunk_id": "i53352_c0",
+            "speaker": "Flor Isabel Weisse Novoa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.6927758928571428,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 4,
+              "dense_rank": 4,
+              "dense_distance": 0.119815,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015625,
+              "lexical_overlap": 0.5714285714285714,
+              "matched_terms": [
+                "carabineros",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, este proyecto fue iniciado en mensaje del 10 de abril del 2023 y no tuvo movimiento hasta agosto del 2023 -se presentaron indica- ciones-, cuando ocurrió el cruel asesinato de los carabineros en Cañete. Incluso, suspendimos la semana distrital y retomamos esta discusión en particular, porque era prioridad y en su momento fue acogido de manera bastante transversal. Luego vino todo un debate y sabemos que en el Senado hubo presentaciones de ciertos protocolos, impulsados por la entonces ministra del Interior Carolina Tohá, en virtud del cual nuestros carabineros y los miembros de las Fuerzas Armadas debían cumplir con un listado de condiciones antes de poder actuar en situaciones en donde se ponía en riesgo su vida o cuando estaban controlando el orden público. Creíamos que la “ley Nain-Retamal” había resuelto de alguna manera el problema de falta de protección de nuestros carabineros, la que también surge después del asesinato, dos meses después, de tres carabineros, entre los que está Álex Salazar, de la comuna de Cañete. Al responsable de esa muerte le dieron 12 años más 3 años por maltrato, es decir, 15 años, lo que es absolutamente injusto. Sin duda, este proyecto es necesario, ya que se deben establecer protocolos, pero, tal como señalé, la “ley Nain-Retamal” protege a los carabineros frente al riesgo de su integridad física. Se trata de resguardar el orden público o la infraestructura crítica, situación en la que quedan habilitados para actuar, usando la fuerza en sus diferentes expresiones. Un avance es que se haya aceptado la incorporación en este proyecto del principio de racionalidad en lugar del principio de proporcionalidad que plantea el oficialismo, que plantea la izquierda, porque la racionalidad es una necesidad. Por supuesto que la exención de responsabilidad penal también es una forma de proteger y facultar a nuestras policías y Fuerzas Armadas para que no tengan que estar desfilando por los tribunales cuando les ha tocado precisamente resguardar el orden público. Quienes alteran el orden público son los que deben dar explicaciones y ser enfrentados a la justicia. Sin embargo, hay un tema"
+          },
+          {
+            "intervention_id": "i57943",
+            "chunk_id": "i57943_c0",
+            "speaker": "Claudia Pascual Grau",
+            "party": "Partido Comunista de Chile",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.6745436688311688,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 5,
+              "dense_rank": 6,
+              "dense_distance": 0.130206,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.015151515151515152,
+              "lexical_overlap": 0.5714285714285714,
+              "matched_terms": [
+                "carabineros",
+                "ley",
+                "nain",
+                "retamal"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "La señora PASCUAL.- Gracias, Presidente.<br/>Yo solicité algunas votaciones por separado, en que voy a argumentar después cuando nos den la palabra específicamente, pero quiero referirme a tres temas vinculados con algunas de esas solicitudes.<br/>Lo primero tiene que ver con la distinción entre los principios y los deberes que esta legislación tiene.<br/>¿Y por qué quiero hacer distinción en aquello? Puesto que aquí, lamentablemente, habiéndose mejorado en las comisiones unidas el proyecto de ley que venía desde la Cámara, ese debate eliminó, sin embargo, el principio de rendición de cuentas. Y es bien distinto este principio que solo el deber del personal de reportar a su superior.<br/>¿Por qué quiero reivindicarlo? Puesto que la rendición de cuentas no solo tiene que ver con la entrega de forma constante de información de manera transparente a los superiores y a la autoridad civil, sino que también es un elemento que debe tener la sociedad civil para el propio seguimiento y valoración de las actuaciones.<br/>Repito: creo que son distintos, y lamento que se haya eliminado.<br/>Lo segundo que quiero plantear es que me parece importante recordar dos cosas.<br/>Primero, que aquí se trata, por parte de algunos, de generar el mismo debate que se dio en la llamada ́Ley Nain-Retamal ́ en cuanto a insistir en eximentes de responsabilidad en la presunción del uso legítimo de la fuerza a todo evento.<br/>Yo solo quiero recordar que en ese debate no solo no estuvimos de acuerdo, sino que inclusive, producto de los hechos fatídicos que ocurrieron con respecto a otros dos funcionarios y funcionarias de Carabineros después de haber votado en este hemiciclo la fase final de tramitación de ese proyecto de ley, no se alcanzó a hacer control preventivo de constitucionalidad porque la ley fue promulgada a las 7:35 de la mañana de un día jueves.<br/>Por lo tanto, desde ese punto de vista, quiero decir que al menos yo tengo una inquietud en cuanto a que se pudo haber solicitado el pronunciamiento del Tribunal Constitucional con respecto a algunas de las normas que ahí estaban.<br/>"
+          }
+        ]
+      }
+    },
+    {
+      "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+      "sparse": {
+        "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+        "answer": "En las intervenciones parlamentarias, se abordaron temas relacionados con la muerte digna y los cuidados paliativos de la siguiente manera:\n\n1. **Partido Demócrata Cristiano**: Se mencionó la preocupación por la falta de atención oncológica en la Región de Aysén, donde se destacó la ausencia de especialistas y recursos para la atención del cáncer. Aunque no se mencionó directamente la muerte digna o la eutanasia, se hizo hincapié en la necesidad de mejorar los cuidados paliativos y la atención a pacientes con enfermedades terminales, lo que se relaciona con el concepto de muerte digna [INT-].\n\n2. **Partido Social Cristiano**: Se hizo una fuerte apelación a la necesidad de brindar apoyo y cuidados a niños con enfermedades terminales a través de la Fundación Deportistas Por Un Sueño. Se enfatizó la importancia de proporcionar una muerte digna a estos niños, argumentando que el Estado debe garantizarles cuidados y apoyo en sus últimos momentos. El parlamentario expresó que estos niños merecen partir con dignidad y que la discusión sobre la muerte digna debe estar presente en el hemiciclo [INT-].\n\nNo se encontraron menciones específicas sobre proyectos de ley relacionados con la eutanasia, pero sí se abordaron temas de cuidados paliativos y la necesidad de dignidad en el proceso de morir.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Demócrata Cristiano",
+            "chamber": "",
+            "session_date": "",
+            "score": 12.736028912753774,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 1,
+              "matched_terms": [
+                "cuidados",
+                "paliativos"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, pido al gobierno -está el señor ministro presente- que pueda tomar en cuenta lo que aquí se ha señalado -si es necesario, podría hacerse un receso para que lo considere-, porque me doy cuenta de que todos queremos rechazar la partida de Salud, ya que no vemos los temas que son de interés regional expuestos en este presupuesto. Por ello, quiero saber si hay alguna disposición del gobierno a conversar y a revisar este presupuesto. Particularmente, en la Región de Aysén tenemos una preocupación relacionada con el centro oncológico. Somos una región que tiene una extensión como desde Santiago hasta Osorno, y tenemos un oncólogo, cero radioterapeutas, cero especialistas certificados en cuidados paliativos, cero PET, cero TAC. O sea, somos una región absolutamente desprovista de lo requerido para la atención del cáncer. Existe un compromiso de este gobierno y del gobierno anterior respecto de dotar de un centro oncológico a Aysén; sin embargo, hoy no lo veo. Por lo tanto, no puedo votar a favor este presupuesto. He dicho."
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Republicano de Chile",
+            "chamber": "",
+            "session_date": "",
+            "score": 11.875148307393077,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 2,
+              "matched_terms": [
+                "muerte",
+                "proyectos"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, que este proyecto de ley tenga urgencia legislativa es un verdadero escándalo. Es priorizado a dos semanas de la elección, porque algunos buscan congraciarse con un animador de televisión. Otros, incluso, pasan sus avisos de redes sociales mencionando sus cuentas de Tik Tok. Por supuesto, esto es populismo para la galería. No son uno ni dos ni tres ni cuatro los proyectos en materia de seguridad que se encuentran en tabla esta semana, sino seis, pero ninguno ha sido priorizado. Cuatro proyectos de estos fueron despachados por la Comisión de Seguridad Ciudadana, instancia que me toca presidir, y están al mismo nivel que los proyectos populistas y demagogos como el del No+TAG o el que elimina la UF. ¡Esas son las prioridades del gobierno! Proyectos tan importantes como aumentar la flagrancia, modificar la ley N° 20.000 para poder perseguir un flagelo de verdad que mata a chilenos, como es el fentanilo, no son prioridad, pero esto sí es prioridad... (Hablan varios diputados a la vez) Proyectos como el que tipifica una pena para el daño a la infraestructura carcelaria, como lo que pasó en la cárcel de máxima seguridad, no son prioridad para este gobierno, pero sí lo es un proyecto para congraciarse con un animador de televisión. Puedo sentir y compartir el dolor de alguien que pierde una mascota, pero hay algunas reflexiones mínimas que les exijo a mis colegas. Este proyecto de ley pone en el mismo articulado la muerte de una mascota con la muerte de un hijo, con la muerte de un padre. Es una normativa que actualmente no incluye la muerte de un abuelo o de un nieto; tampoco la muerte de un amigo de toda la vida, de una polola o de un ser querido muy cercano que no es el hijo o la mujer. Creo que hay un serio problema de prioridades. Hace algunas horas la Policía de Investigaciones realizó un operativo en una toma en Colina. De 140 extranjeros, 83 estaban ilegales en el país. Y esto colapsa nuestros centros asistenciales. (Hablan varios diputados a la vez) Señor Presidente, por favor, pido que llame al orden."
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Revolución Democrática",
+            "chamber": "",
+            "session_date": "",
+            "score": 10.931387182167878,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 3,
+              "matched_terms": [
+                "cuidados",
+                "paliativos"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "que ya se están realizando en la oferta Chile Cuida, lleva a cabo quince programas: plan Nacional de Demencia; el GES de Alzhéimer y otras demencias en la atención primaria de salud; rehabilitación integral para adultos en la atención primaria; atención odontológica a personas con dependencia severa y a las personas cuidadoras; atención domiciliaria a personas con dependencia severa; Cuidados Paliativos Universales; entrega de pañales a personas mayores con dependencia severa y a sus cuidadores; Más Adultos Mayores Autovalentes; entrega de fármacos a domicilio; atención integral a desarrollo infantoadolescente, parte de la ley TEA; residencias y hogares protegidos; hospitalización domiciliaria.<br/>Entonces, esos son el enfoque sociosanitario del sistema y el rol clave del Minsal y sus programas en la oferta pública.<br/>Como se ha dicho, hay un conjunto de principios que no tienen que ver con una visión ideológica en el sentido de que se esté imponiendo una mirada, sino que forman parte de convenios que Chile ya ha firmado a nivel internacional, no solo en este Gobierno, sino también en los anteriores. O sea, debe pensarse -insisto- en una política de Estado a seguir robusteciendo en el tiempo como parte de la construcción de un Estado de bienestar social moderno y de políticas sociales universalistas, pero que se hacen cargo de la crisis de cuidado de nuestras sociedades.<br/>En eso el principio de la interseccionalidad, el principio de la corresponsabilidad de género, el principio de la corresponsabilidad social, son principios que se integran -reitero- a distintos tratados y acuerdos internacionales que Chile ya ha suscrito. Y ahora lo que hace el proyecto que estamos votando, que reconoce el derecho al cuidado y crea el Sistema Nacional de Apoyos y Cuidados, es encarnar y aterrizar aquellos acuerdos internacionales que dicen relación con derechos sociales, económicos y culturales en los países.<br/>Por último, Presidente, quisiera referirme a la disyuntiva que ya se había mencionado: la colaboración público-privada.<br/>No se trata de que el Estado se haga cargo de toda la oferta. Por cierto, tiene que"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Revolución Democrática",
+            "chamber": "",
+            "session_date": "",
+            "score": 10.931387182167878,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 4,
+              "matched_terms": [
+                "cuidados",
+                "paliativos"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "que ya se están realizando en la oferta Chile Cuida, lleva a cabo quince programas: plan Nacional de Demencia; el GES de Alzhéimer y otras demencias en la atención primaria de salud; rehabilitación integral para adultos en la atención primaria; atención odontológica a personas con dependencia severa y a las personas cuidadoras; atención domiciliaria a personas con dependencia severa; Cuidados Paliativos Universales; entrega de pañales a personas mayores con dependencia severa y a sus cuidadores; Más Adultos Mayores Autovalentes; entrega de fármacos a domicilio; atención integral a desarrollo infantoadolescente, parte de la ley TEA; residencias y hogares protegidos; hospitalización domiciliaria.<br/>Entonces, esos son el enfoque sociosanitario del sistema y el rol clave del Minsal y sus programas en la oferta pública.<br/>Como se ha dicho, hay un conjunto de principios que no tienen que ver con una visión ideológica en el sentido de que se esté imponiendo una mirada, sino que forman parte de convenios que Chile ya ha firmado a nivel internacional, no solo en este Gobierno, sino también en los anteriores. O sea, debe pensarse -insisto- en una política de Estado a seguir robusteciendo en el tiempo como parte de la construcción de un Estado de bienestar social moderno y de políticas sociales universalistas, pero que se hacen cargo de la crisis de cuidado de nuestras sociedades.<br/>En eso el principio de la interseccionalidad, el principio de la corresponsabilidad de género, el principio de la corresponsabilidad social, son principios que se integran -reitero- a distintos tratados y acuerdos internacionales que Chile ya ha suscrito. Y ahora lo que hace el proyecto que estamos votando, que reconoce el derecho al cuidado y crea el Sistema Nacional de Apoyos y Cuidados, es encarnar y aterrizar aquellos acuerdos internacionales que dicen relación con derechos sociales, económicos y culturales en los países.<br/>Por último, Presidente, quisiera referirme a la disyuntiva que ya se había mencionado: la colaboración público-privada.<br/>No se trata de que el Estado se haga cargo de toda la oferta. Por cierto, tiene que"
+          },
+          {
+            "intervention_id": "",
+            "chunk_id": "",
+            "speaker": "",
+            "party": "Partido Social Cristiano",
+            "chamber": "",
+            "session_date": "",
+            "score": 10.760794818778926,
+            "extra": {
+              "retriever": "sparse_bm25",
+              "rank": 5,
+              "matched_terms": [
+                "cuidados",
+                "digna",
+                "muerte"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "Señor Presidente, colegas diputadas y diputados, ministros presentes, hoy me levanto para hablar de algo que este presupuesto no quiso ver, y lo digo con dolor. La Fundación Deportistas Por Un Sueño no está en la glosa. Es una organización que acompaña a nuestros niños más vulnerables con enfermedades degenerativas complejas y terminales. Son niños que, literalmente, están condenados a morir, y frente a eso el Estado guarda silencio. El dinero no es tanto. Dicha fundación requiere 350 millones de pesos para funcionar durante un año completo, lo cual es mucho menos de lo que se gasta en comparación con todo lo que se utiliza en otras supuestas prioridades. Cuando hablamos de niños, a veces lo decimos como si se tratara de otros, como si fueran historias distantes, tragedias ajenas. Quiero invitar a esta Sala a algo muy simple, profundo y humano: pensemos qué pasaría si ese niño fuera nuestro hijo, o de algunos de ustedes que presiden ministerios, o de algunos de ustedes, colegas, que están sentados en este hemiciclo. ¿Cómo reaccionaríamos si el Estado nos diera la espalda, si nos dijeran que no hay glosa, que no hay una línea presupuestaria, que no hay recursos simplemente porque no alcanzó? Es tan distinto cuando ustedes tienen en brazos a uno de estos niños o cuando una niña de nueve años dice: “Tío, tengo cáncer y sé que voy a morir, pero rechacé las quimioterapias porque prefiero estar más tiempo con mis papás y las personas que más quiero”. Obviamente, esa niña entendió lo que es la vida mucho mejor que todos nosotros en esta Sala. Esa fundación no pide lujos ni privilegios, sino acompañar, dignificar y aliviar. Pide dar a esos niños lo único que les queda: una muerte digna. Aunque nos incomode, esa palabra debe estar presente aquí. Esos niños merecen partir con dignidad, merecen cuidados y apoyo; tienen derechos, aunque el tiempo no esté de su lado. Por eso luchamos por reponer esta glosa. No es una pelea por recursos para salud, sino por humanidad, por justicia; por esos niños"
+          }
+        ]
+      },
+      "hybrid": {
+        "question": "Que se dijo sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos?",
+        "answer": "El contexto de las intervenciones proporcionadas no incluye información específica sobre boletines o proyectos asociados a muerte digna, eutanasia y cuidados paliativos. Por lo tanto, no puedo ofrecer detalles sobre esos temas basándome únicamente en las intervenciones disponibles.",
+        "retrieved_chunks": [
+          {
+            "intervention_id": "i58750",
+            "chunk_id": "i58750_c0",
+            "speaker": "Jaime Quintana Leal",
+            "party": "Partido por la Democracia",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.6596444444444445,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 1,
+              "dense_rank": 4,
+              "dense_distance": 0.16059,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.031754032258064516,
+              "lexical_overlap": 0.1111111111111111,
+              "matched_terms": [
+                "cuidados"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor QUINTANA.- Gracias, señor Presidente.Quiero también saludar a quienes nos acompañan en las tribunas, a instituciones como Ronda, GAFA, Mudecu, Yo Cuido, Corporación Humanas, Cuidadoras CAM, entre otras.<br/>Y por supuesto a las ministras Antonia Orellana y Aisén Etcheverry, así como a la subsecretaria de Evaluación Social, quienes nos acompañan y han sido parte de este esfuerzo.<br/>En verdad, hasta hace algunas semanas la discusión política era si el gobierno que vendrá será de continuidad o no. Me refiero al mundo del progresismo, de la centroizquierda. Y probablemente no, ningún gobierno es de continuidad, porque al final son ciclos distintos, énfasis distintos, y hay que ir haciendo apuestas por temas muy relevantes.<br/>Yo creo que, cuando miremos en retrospectiva logros importantes que hay que defender en este Gobierno, y que son un primer paso, sin duda uno de ellos será el Sistema Nacional de Cuidados. Son políticas públicas permanentes que van a requerir en el tiempo no solo mayores recursos, sino también donde todos, el Estado, los privados, la institucionalidad, vayan siendo capaces de continuar extendiendo estos beneficios.<br/>Me parece que aquí hay un abordaje de la empatía, desde lo humano, y es sin lugar a dudas uno de los grandes logros del legado del Presidente Boric. Eso hay que reconocerlo, transversalmente.<br/>Por eso, me cuesta comprender cómo, en la primera discusión de este proyecto, haya habido sectores minoritarios -sí, por suerte minoritarios: básicamente republicanos- que no concurrieron con sus votos a aprobar un tema como este, ¡como si hubiera otra manera de abordar el problema sin una red, sin una preocupación por las personas que tienen una dependencia severa, por ejemplo!<br/>Cómo no recordar también, por cierto, a la ministra Javiera Toro, que ha tenido un rol muy relevante en esto y con quien participé por lo menos en un par de jornadas de los diálogos ́Hablemos de Cuidados ́, el año 2023, si mal no recuerdo.<br/>Yo"
+          },
+          {
+            "intervention_id": "i60474",
+            "chunk_id": "i60474_c0",
+            "speaker": "Jaime Quintana Leal",
+            "party": "Partido por la Democracia",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.5086922127743525,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 2,
+              "dense_rank": 19,
+              "dense_distance": 0.165437,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.025645240835114255,
+              "lexical_overlap": 0.1111111111111111,
+              "matched_terms": [
+                "cuidados"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor QUINTANA.- Gracias, señor Presidente.Efectivamente, como ha dicho mi colega el senador De Urresti, ha sido una discusión de máxima importancia, y este proyecto lo es.<br/>Quisiera destacar, por cierto, la presencia de las ministras que han impulsado esta iniciativa en toda su expresión, como es el caso de la ministra de Desarrollo Social, Javiera Toro, y de la ministra de la Mujer, Antonia Orellana.<br/>También, desde luego, deseo saludar a todas las organizaciones, de Arica a Magallanes, que han acompañado este proceso, que ha sido muy participativo.<br/>Recuerdo haber estado hace más de dos años, en el primer año del Gobierno del Presidente Boric, quien puso una voluntad política indiscutible en esta materia, cuando se empezaron a conocer los primeros trabajos de las jornadas Hablemos de Cuidados, que fueron muy participativas, en que surgieron muchas ideas y que hoy día se están implementando en este ́primer piso ́, como le llamo yo. Porque esta es una política que evidentemente requiere una cierta continuidad -no una cierta, sino mucha continuidad-, mucha voluntad política para seguir adelante.<br/>Entonces, yo destaco lo que ha sido este debate, su transversalidad. Pero también hay que decir las cosas como son: no todo fue transversal. En la votación de la Cámara de Diputados, hace algunos meses, hubo una bancada completa que rechazó el Sistema Nacional de Cuidados; fue la bancada del Partido Republicano. O sea, parece incomprensible, cuando uno ve este nivel de coincidencia entre las distintas bancas en este Senado, que haya habido sectores, diputados que se opusieran. Como han rechazado otros acuerdos, se opusieron también a que Chile tuviera un Sistema Nacional de Cuidados, a este primer piso tan necesario, a este reconocimiento a la mujer -a las mujeres, porque la inmensa mayoría son cuidadoras- y a que se estableciera además como un derecho fundamental, que forma parte del pilar de protección social, junto con la reforma de pensiones, que también requirió muchos acuerdos de este Congreso.<br/>Quis"
+          },
+          {
+            "intervention_id": "i62449",
+            "chunk_id": "i62449_c0",
+            "speaker": "Jaime Quintana Leal",
+            "party": "Partido por la Democracia",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.4696457747543461,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 3,
+              "dense_rank": 5,
+              "dense_distance": 0.16059,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.03125763125763126,
+              "lexical_overlap": 0.1111111111111111,
+              "matched_terms": [
+                "cuidados"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor QUINTANA.- Gracias, señor Presidente.Quiero también saludar a quienes nos acompañan en las tribunas, a instituciones como Ronda, GAFA, Mudecu, Yo Cuido, Corporación Humanas, Cuidadoras CAM, entre otras.<br/>Y por supuesto a las ministras Antonia Orellana y Aisén Etcheverry, así como a la subsecretaria de Evaluación Social, quienes nos acompañan y han sido parte de este esfuerzo.<br/>En verdad, hasta hace algunas semanas la discusión política era si el gobierno que vendrá será de continuidad o no. Me refiero al mundo del progresismo, de la centroizquierda. Y probablemente no, ningún gobierno es de continuidad, porque al final son ciclos distintos, énfasis distintos, y hay que ir haciendo apuestas por temas muy relevantes.<br/>Yo creo que, cuando miremos en retrospectiva logros importantes que hay que defender en este Gobierno, y que son un primer paso, sin duda uno de ellos será el Sistema Nacional de Cuidados. Son políticas públicas permanentes que van a requerir en el tiempo no solo mayores recursos, sino también donde todos, el Estado, los privados, la institucionalidad, vayan siendo capaces de continuar extendiendo estos beneficios.<br/>Me parece que aquí hay un abordaje de la empatía, desde lo humano, y es sin lugar a dudas uno de los grandes logros del legado del Presidente Boric. Eso hay que reconocerlo, transversalmente.<br/>Por eso, me cuesta comprender cómo, en la primera discusión de este proyecto, haya habido sectores minoritarios -sí, por suerte minoritarios: básicamente republicanos- que no concurrieron con sus votos a aprobar un tema como este, ¡como si hubiera otra manera de abordar el problema sin una red, sin una preocupación por las personas que tienen una dependencia severa, por ejemplo!<br/>Cómo no recordar también, por cierto, a la ministra Javiera Toro, que ha tenido un rol muy relevante en esto y con quien participé por lo menos en un par de jornadas de los diálogos ́Hablemos de Cuidados ́, el año 2023, si mal no recuerdo.<br/>Yo"
+          },
+          {
+            "intervention_id": "i64327",
+            "chunk_id": "i64327_c0",
+            "speaker": "Jaime Quintana Leal",
+            "party": "Partido por la Democracia",
+            "chamber": "Senador",
+            "session_date": "",
+            "score": 0.35005841269841265,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 4,
+              "dense_rank": 20,
+              "dense_distance": 0.165437,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.02532051282051282,
+              "lexical_overlap": 0.1111111111111111,
+              "matched_terms": [
+                "cuidados"
+              ],
+              "score_direction": "higher_is_better"
+            },
+            "text": "El señor QUINTANA.- Gracias, señor Presidente.Efectivamente, como ha dicho mi colega el senador De Urresti, ha sido una discusión de máxima importancia, y este proyecto lo es.<br/>Quisiera destacar, por cierto, la presencia de las ministras que han impulsado esta iniciativa en toda su expresión, como es el caso de la ministra de Desarrollo Social, Javiera Toro, y de la ministra de la Mujer, Antonia Orellana.<br/>También, desde luego, deseo saludar a todas las organizaciones, de Arica a Magallanes, que han acompañado este proceso, que ha sido muy participativo.<br/>Recuerdo haber estado hace más de dos años, en el primer año del Gobierno del Presidente Boric, quien puso una voluntad política indiscutible en esta materia, cuando se empezaron a conocer los primeros trabajos de las jornadas Hablemos de Cuidados, que fueron muy participativas, en que surgieron muchas ideas y que hoy día se están implementando en este ́primer piso ́, como le llamo yo. Porque esta es una política que evidentemente requiere una cierta continuidad -no una cierta, sino mucha continuidad-, mucha voluntad política para seguir adelante.<br/>Entonces, yo destaco lo que ha sido este debate, su transversalidad. Pero también hay que decir las cosas como son: no todo fue transversal. En la votación de la Cámara de Diputados, hace algunos meses, hubo una bancada completa que rechazó el Sistema Nacional de Cuidados; fue la bancada del Partido Republicano. O sea, parece incomprensible, cuando uno ve este nivel de coincidencia entre las distintas bancas en este Senado, que haya habido sectores, diputados que se opusieran. Como han rechazado otros acuerdos, se opusieron también a que Chile tuviera un Sistema Nacional de Cuidados, a este primer piso tan necesario, a este reconocimiento a la mujer -a las mujeres, porque la inmensa mayoría son cuidadoras- y a que se estableciera además como un derecho fundamental, que forma parte del pilar de protección social, junto con la reforma de pensiones, que también requirió muchos acuerdos de este Congreso.<br/>Quis"
+          },
+          {
+            "intervention_id": "i55875",
+            "chunk_id": "i55875_c1",
+            "speaker": "Andrés Celis Montt",
+            "party": "Partido Renovación Nacional",
+            "chamber": "Diputado",
+            "session_date": "",
+            "score": 0.3198355375177279,
+            "extra": {
+              "retriever": "hybrid_rrf_mmr",
+              "rank": 5,
+              "dense_rank": 1,
+              "dense_distance": 0.15659,
+              "sparse_rank": null,
+              "sparse_score": null,
+              "rrf_score": 0.01639344262295082,
+              "lexical_overlap": 0.0,
+              "matched_terms": [],
+              "score_direction": "higher_is_better"
+            },
+            "text": "de esta iniciativa. Es más, un informe de la Biblioteca del Congreso Nacional afirma que el costo real del proyecto supera en más de 10 por ciento lo proyectado por el gobierno del Presidente Boric, lo cual, evidentemente, como Cámara que fiscaliza los actos de gobierno, nos debe llamar, a lo menos, a la reflexión. Esas son las dudas que trae aparejada esta iniciativa, que -reitero- es loable. Esperamos que esas inquietudes sean debidamente esclarecidas por el Ejecutivo, ya que las personas con severos grados de dependencia y sus cuidadores requieren respuestas claras, eficientes y justas del Estado. Espero que este gobierno por fin se haga cargo y esté a la altura de las circunstancias. He dicho."
+          }
+        ]
+      }
+    }
+  ]
+}

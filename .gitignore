@@ -1,1 +1,6 @@
 data/
+__pycache__/
+*.pyc
+.env
+final_data_embedded.qm
+mdb_t2/

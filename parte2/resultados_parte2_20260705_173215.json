@@ -1,0 +1,706 @@
+{
+  "parte": 2,
+  "estrategia": "GraphRAG",
+  "top_k": 5,
+  "llm_model": "gpt-4o-mini",
+  "timestamp": "2026-07-05T17:32:15.101110",
+  "requirements_checked": [
+    "restriccion tipada por partido",
+    "restriccion tipada por camara/rol",
+    "agregacion y contraste por partido",
+    "agregacion y contraste por camara/rol",
+    "atributo numerico/temporal por fecha de nacimiento",
+    "atributo temporal por fecha de sesion",
+    "comparacion GraphRAG vs RAG denso"
+  ],
+  "resultados": {
+    "patron_a": {
+      "error": "HTTP 400: Parsing Exception. Line 5, col: 20: mismatched input `=`"
+    },
+    "patron_b": {
+      "contraste_partido": {
+        "pattern": "semantic_search_grouped_by_party",
+        "question": "Que posturas defienden los distintos partidos sobre migracion irregular y seguridad fronteriza?",
+        "groups_found": [
+          "Partido Renovación Nacional",
+          "Partido Demócrata Cristiano",
+          "Partido Unión Demócrata Independiente",
+          "Partido Socialista de Chile",
+          "Partido Republicano de Chile"
+        ],
+        "answer": "Las posturas de los distintos partidos sobre migración irregular y seguridad fronteriza, según las intervenciones parlamentarias, son las siguientes:\n\n1. **Partido Renovación Nacional**:\n   - Defiende la idea de que el acceso a beneficios fiscales debe ser restringido para los migrantes irregulares, argumentando que esto promueve la equidad y el respeto a las normas. Se critica la priorización de los migrantes ilegales en servicios como jardines infantiles, sugiriendo que esto es injusto para las familias chilenas que cumplen con la ley. Se enfatiza que el proyecto de ley busca promover la migración regular y proteger tanto a los migrantes como a la comunidad de acogida [INT-i54932][INT-i55726].\n\n2. **Partido Demócrata Cristiano**:\n   - Aboga por un control fronterizo efectivo y la necesidad de apoyo de las Fuerzas Armadas para enfrentar el crimen organizado y la migración irregular. Se enfatiza que la política migratoria debe ser una política de Estado y no solo de un gobierno. Se rechaza la idea de militarización, pero se sostiene que es fundamental que quienes ingresen al país lo hagan respetando las leyes [INT-i61169][INT-i65099].\n\n3. **Partido Unión Demócrata Independiente**:\n   - Critica la crisis migratoria irregular y señala que la presencia de las Fuerzas Armadas en la frontera es necesaria para contener esta situación. Se argumenta que la falta de recursos y facultades limita la efectividad de esta presencia. Se apoya la renovación de la presencia militar en la frontera como un primer paso hacia un plan más integral para controlar la inmigración ilegal [INT-i55300][INT-i65634].\n\n4. **Partido Socialista de Chile**:\n   - Manifiesta que se está logrando cierto éxito en el control de la frontera y que las críticas sobre la salida ilegal de personas no deben ser el foco de la política migratoria. Se sugiere que los parlamentarios deberían visitar la frontera para entender mejor la situación y el trabajo de los efectivos militares [INT-i59048][INT-i62777].\n\n5. **Partido Republicano de Chile**:\n   - Propone medidas más drásticas, como la construcción de una frontera física y el cierre de pasos no habilitados. Se critica la falta de acción del gobierno y se demanda una mayor presencia militar y recursos para controlar la frontera. Se argumenta que las medidas actuales son insuficientes y que se necesita una decisión firme del Estado para cerrar completamente las fronteras [INT-i54946][INT-i53399].\n\nEn resumen, hay un consenso en la necesidad de controlar la migración irregular, pero las propuestas varían desde la promoción de la migración regular y el respeto a las leyes hasta la implementación de medidas más severas como el cierre de fronteras y la militarización del control fronterizo.",
+        "retrieved_by_group": {
+          "Partido Renovación Nacional": [
+            {
+              "chunk_id": "i54932_c0",
+              "intervention_id": "i54932",
+              "score": 0.150344,
+              "speaker": "Andrés Longton Herrera",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Señor Presidente, primero, quiero clarificar algunas cosas respecto de la postura que ha tenido la izquierda históricamente en esta materia y la postura que tiene hoy, así como sobre la confusión que algunos tratan de establecer entre el migrante ilegal y el migrante regular, aquel que entró por la "
+            },
+            {
+              "chunk_id": "i55726_c1",
+              "intervention_id": "i55726",
+              "score": 0.153008,
+              "speaker": "Andrés Celis Montt",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Estado. Permitir el acceso irrestricto a beneficios fiscales a personas que no han regularizado su situación migratoria genera una inequidad inaceptable, ya que vulnera el principio de igualdad ante la ley para aquellos que han seguido los canales regulares, que han esperado sus turnos y que cumplen"
+            }
+          ],
+          "Partido Demócrata Cristiano": [
+            {
+              "chunk_id": "i61169_c3",
+              "intervention_id": "i61169",
+              "score": 0.153866,
+              "speaker": "Yasna Provoste Campillay",
+              "party": "Partido Demócrata Cristiano",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "a construir una vida digna, a respetar nuestras leyes, a integrarse a nuestras comunidades, ¡sí! Pero ¡no! a quienes ingresan por pasos no habilitados, ¡no! a quienes tienen antecedentes penales, ¡no! a quienes cometen delitos en nuestros territorios, ¡no! al crimen organizado, que se aprovecha much"
+            },
+            {
+              "chunk_id": "i65099_c3",
+              "intervention_id": "i65099",
+              "score": 0.153866,
+              "speaker": "Yasna Provoste Campillay",
+              "party": "Partido Demócrata Cristiano",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "a construir una vida digna, a respetar nuestras leyes, a integrarse a nuestras comunidades, ¡sí! Pero ¡no! a quienes ingresan por pasos no habilitados, ¡no! a quienes tienen antecedentes penales, ¡no! a quienes cometen delitos en nuestros territorios, ¡no! al crimen organizado, que se aprovecha much"
+            }
+          ],
+          "Partido Unión Demócrata Independiente": [
+            {
+              "chunk_id": "i55300_c0",
+              "intervention_id": "i55300",
+              "score": 0.155873,
+              "speaker": "Renzo Aldo Trisotti Martínez",
+              "party": "Partido Unión Demócrata Independiente",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Señor Presidente, nuestro país ha experimentado una grave crisis migratoria irregular en los últimos años, con graves consecuencias hasta el día de hoy. Ciento veinticinco mil inmigrantes ilegales entraron a Chile entre 2022 y 2024, y hoy tenemos más de trescientos mil inmigrantes ilegales en el ter"
+            },
+            {
+              "chunk_id": "i65634_c1",
+              "intervention_id": "i65634",
+              "score": 0.156377,
+              "speaker": "Enrique Van Rysselberghe Herrera",
+              "party": "Partido Unión Demócrata Independiente",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "siendo el perfeccionamiento de medidas de expulsión un instrumento útil para lograr tal fin.<br/>De este modo, el presente proyecto de ley parece apuntar en la dirección correcta en cuanto a perfeccionar estas mismas medidas de expulsión, puesto que proporcionan al Estado herramientas más efectivas "
+            }
+          ],
+          "Partido Socialista de Chile": [
+            {
+              "chunk_id": "i59048_c2",
+              "intervention_id": "i59048",
+              "score": 0.160501,
+              "speaker": "José Miguel Insulza Salinas",
+              "party": "Partido Socialista de Chile",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Parinacota, yo digo: ́Estamos teniendo cierto éxito ́.<br/>No creo que sea tema de esta política el hecho de que salga gente ilegalmente del país. Porque si alguien lo hace, puede tratarse de un asunto delictual que las policías deberán examinar. Pero eso no pone en riesgo la seguridad de nuestra fr"
+            },
+            {
+              "chunk_id": "i62777_c2",
+              "intervention_id": "i62777",
+              "score": 0.160501,
+              "speaker": "José Miguel Insulza Salinas",
+              "party": "Partido Socialista de Chile",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Parinacota, yo digo: ́Estamos teniendo cierto éxito ́.<br/>No creo que sea tema de esta política el hecho de que salga gente ilegalmente del país. Porque si alguien lo hace, puede tratarse de un asunto delictual que las policías deberán examinar. Pero eso no pone en riesgo la seguridad de nuestra fr"
+            }
+          ],
+          "Partido Republicano de Chile": [
+            {
+              "chunk_id": "i54946_c0",
+              "intervention_id": "i54946",
+              "score": 0.163663,
+              "speaker": "Cristián Andrés Araya Lerdo de Tejada",
+              "party": "Partido Republicano de Chile",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "La misma que rasgaba vestiduras contra José Antonio Kast por haber propuesto hacer una zanja en la frontera; la misma que votó en contra de tipificar como delito el ingreso ilegal a Chile, porque era criminalizar la migración; la misma que ahora pretende empadronar a los inmigrantes ilegales para re"
+            },
+            {
+              "chunk_id": "i53399_c0",
+              "intervention_id": "i53399",
+              "score": 0.16416,
+              "speaker": "José Carlos Meza Pereira",
+              "party": "Partido Republicano de Chile",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Señor Presidente, a diferencia de otras bancadas, nosotros hemos argumentado sostenidamente la necesidad de contar con la presencia de efectivos militares en la frontera. Esa es la razón por la cual vamos a concurrir con nuestro voto favorable a la renovación de esta medida. ¿Hace falta algo más? Ev"
+            }
+          ]
+        }
+      },
+      "contraste_camara": {
+        "pattern": "semantic_search_grouped_by_chamber_role",
+        "question": "Como se ha debatido el proyecto de ley de salud mental?",
+        "groups_found": [
+          "Senador",
+          "Diputado"
+        ],
+        "answer": "El debate sobre el proyecto de ley de salud mental ha incluido diversas posturas y enfoques por parte de los parlamentarios. A continuación, se resumen las intervenciones más relevantes:\n\n1. **Apoyo al proyecto**: La señora Pascual del Partido Comunista ha expresado su apoyo al proyecto, destacando que este se alinea con los objetivos del Presidente Gabriel Boric y la importancia de la salud mental como parte integral de la salud. Resalta la necesidad de abordar las brechas en el sistema de salud, como los largos tiempos de espera para consultas psiquiátricas y la falta de camas psiquiátricas, lo que refleja la complejidad de los desafíos en este ámbito [INT-i61271].\n\n2. **Cuestionamientos sobre costos**: Por otro lado, un parlamentario del Partido Renovación Nacional ha manifestado preocupaciones sobre el costo del proyecto, señalando que un informe indica que el costo real supera en más de un 10% lo proyectado por el gobierno. Este parlamentario ha llamado a la reflexión sobre estas inquietudes y ha enfatizado la necesidad de respuestas claras y eficientes del Estado para las personas con severos grados de dependencia y sus cuidadores [INT-i55875].\n\n3. **Visión sobre la sociedad**: Desde el Partido Socialista, se ha argumentado que el proyecto es trascendental porque refleja una concepción de la vida en sociedad que prioriza la solidaridad y el cuidado de los más vulnerables. Este parlamentario ha enfatizado que la iniciativa busca forjar un Estado que promueva la mancomunidad y los vínculos sociales, y ha expresado su apoyo al proyecto en función de estos principios [INT-i52830].\n\nEn resumen, el debate ha estado marcado por un fuerte apoyo al proyecto en términos de su relevancia social y la necesidad de abordar la salud mental, pero también ha surgido una crítica sobre los costos asociados y la viabilidad del mismo.",
+        "retrieved_by_group": {
+          "Senador": [
+            {
+              "chunk_id": "i61271_c0",
+              "intervention_id": "i61271",
+              "score": 0.13801,
+              "speaker": "Claudia Pascual Grau",
+              "party": "Partido Comunista de Chile",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "La señora PASCUAL.- Gracias, Presidente.<br/>Quiero sumarme a la votación a favor en general de este proyecto de ley, porque este es uno de los objetivos que ha planteado precisamente el Presidente de la República, Gabriel Boric.<br/>Al mismo tiempo, aprovecho de felicitar a la ministra de Salud, se"
+            },
+            {
+              "chunk_id": "i65201_c0",
+              "intervention_id": "i65201",
+              "score": 0.13801,
+              "speaker": "Claudia Pascual Grau",
+              "party": "Partido Comunista de Chile",
+              "chamber": "Senador",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "La señora PASCUAL.- Gracias, Presidente.<br/>Quiero sumarme a la votación a favor en general de este proyecto de ley, porque este es uno de los objetivos que ha planteado precisamente el Presidente de la República, Gabriel Boric.<br/>Al mismo tiempo, aprovecho de felicitar a la ministra de Salud, se"
+            }
+          ],
+          "Diputado": [
+            {
+              "chunk_id": "i55875_c1",
+              "intervention_id": "i55875",
+              "score": 0.163215,
+              "speaker": "Andrés Celis Montt",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "de esta iniciativa. Es más, un informe de la Biblioteca del Congreso Nacional afirma que el costo real del proyecto supera en más de 10 por ciento lo proyectado por el gobierno del Presidente Boric, lo cual, evidentemente, como Cámara que fiscaliza los actos de gobierno, nos debe llamar, a lo menos,"
+            },
+            {
+              "chunk_id": "i52830_c0",
+              "intervention_id": "i52830",
+              "score": 0.165509,
+              "speaker": "Nelson Esteban Venegas Salazar",
+              "party": "Partido Socialista de Chile",
+              "chamber": "Diputado",
+              "session_date": "",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "Señor Presidente, este proyecto es más trascendente que otras iniciativas que se han planteado y discutido en esta Cámara, porque tiene que ver con cómo entienden algunos la vida en sociedad y cómo la entienden otros. Hay algunos que creen que la sociedad no es más que una suma de individuos particu"
+            }
+          ]
+        }
+      }
+    },
+    "patron_c": {
+      "cohorte_etaria": {
+        "pattern": "semantic_search_filtered_by_birth_date",
+        "question": "Que se dice sobre cambio climatico y medio ambiente?",
+        "cohorts": {
+          "1975_1995": {
+            "answer": "En las intervenciones de los parlamentarios nacidos entre 1975 y 1995, se presentan diversas posturas sobre el medio ambiente:\n\n1. **Revolución Democrática**: Este parlamentario enfatiza la necesidad de tomar medidas para mitigar los efectos de la actividad humana en el medio ambiente. Argumenta que es esencial que tanto los productores como los ciudadanos se adapten a nuevas formas de producción y consumo para hacer sostenible la vida en el planeta. Señala que la crisis climática es innegable y que todos deben hacerse cargo de ella, independientemente de su ideología política. Resalta que la producción sin ética es insostenible y que es necesario establecer restricciones para garantizar la supervivencia en la Tierra [INT-i54713].\n\n2. **Partido Liberal de Chile**: Este parlamentario destaca el consenso científico sobre el cambio climático y sus efectos negativos en los ecosistemas y la vida humana. Menciona que Chile tiene una oportunidad única para contribuir al desarrollo sostenible a través de energías renovables, como el hidrógeno verde y la energía solar. Aboga por una institucionalidad fuerte que apoye el desarrollo sostenible y la protección de los derechos humanos ambientales, sugiriendo que el país puede ser un líder en la producción de energía limpia [INT-i55060].\n\nAmbos parlamentarios coinciden en la urgencia de abordar la crisis climática, aunque sus enfoques y énfasis son diferentes. Mientras que uno se centra en la adaptación y responsabilidad compartida, el otro resalta la importancia del consenso científico y las oportunidades económicas en el ámbito de las energías renovables.",
+            "retrieved": [
+              {
+                "chunk_id": "i55123_c0",
+                "intervention_id": "i55123",
+                "score": 0.153196,
+                "speaker": "Cristóbal Ignacio de Loyola Urruticoechea Ríos",
+                "party": "Partido Nacional Libertario",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1975-11-21T00:00:00",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, no voy a aceptar que la izquierda diga que sabe, maneja, conoce y respeta mejor que la derecha los temas que tienen que ver con la naturaleza, porque eso es completamente falso. Creemos en la ciencia y la biología, no en una ideología cultural de doble arma que coloca a la naturale"
+              },
+              {
+                "chunk_id": "i55123_c1",
+                "intervention_id": "i55123",
+                "score": 0.170646,
+                "speaker": "Cristóbal Ignacio de Loyola Urruticoechea Ríos",
+                "party": "Partido Nacional Libertario",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1975-11-21T00:00:00",
+                "legislative_period": "",
+                "text_preview": "en el MIT -no un mentiroso, como los que la izquierda cita acá como expertos- dijo que no ha habido nuevos hallazgos científicos que justifiquen que lo que antes se veía sin alarma ahora se presenta al público como una amenaza existencial, excepto por grupos ecologistas completamente sin sentido com"
+              },
+              {
+                "chunk_id": "i54713_c1",
+                "intervention_id": "i54713",
+                "score": 0.171116,
+                "speaker": "Consuelo De Los Ángeles Veloso Ávila",
+                "party": "Revolución Democrática",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1994-02-11T00:00:00",
+                "legislative_period": "",
+                "text_preview": "hacemos cargo de eso? Después es muy fácil ponernos a reclamar por la calidad de vida y por los entornos en los cuales habitan los chilenos y las chilenas, pero cuando podemos tomar medidas para amortiguar los efectos de la existencia humana en la tierra, dudamos, cuestionamos y ponemos trabas. Vien"
+              },
+              {
+                "chunk_id": "i55060_c2",
+                "intervention_id": "i55060",
+                "score": 0.171681,
+                "speaker": "Luis Fabián Malla Valenzuela",
+                "party": "Partido Liberal de Chile",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1992-05-16T00:00:00",
+                "legislative_period": "",
+                "text_preview": ", por otro, de diseñar modelos o programas de protección colectiva. Agregado a lo anterior, se contempla un informe especial sobre el calentamiento global de 1,5 grados Celsius, basado en la evaluación de aproximadamente 6.000 publicaciones científicas, dado que, en 2019, fue confirmado que el efect"
+              },
+              {
+                "chunk_id": "i54700_c0",
+                "intervention_id": "i54700",
+                "score": 0.178315,
+                "speaker": "Marta Pilar Bravo Salinas",
+                "party": "Partido Unión Demócrata Independiente",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1976-02-25T00:00:00",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, como país hemos sido exitosos en generar políticas para evitar la contaminación ambiental, creando en la ciudadanía una cultura responsable con el entorno, que hemos visto a través del reciclaje y del uso de materiales reutilizables. Estas conductas son sumamente valorables y demue"
+              }
+            ]
+          },
+          "1940_1960": {
+            "answer": "En las intervenciones parlamentarias de los años 1940 a 1960, se presentan diferentes posturas sobre el medio ambiente:\n\n1. **Senador Prohens (Partido Renovación Nacional)**: Propone que el cuidado del medio ambiente no debe implicar la paralización de la inversión. Sugiere que se pueden crear \"pulmones verdes\" y cultivos que capturen CO2 y emitan oxígeno, lo que permitiría aumentar la producción y las fuentes de empleo sin detener las obras necesarias en Chile. Destaca que Chile emite poco en comparación con otros países y aboga por un cambio en la forma de abordar la contaminación, enfatizando la importancia de medidas de compensación [INT-i63899].\n\n2. **Senador de la UDI**: Reconoce que las condiciones climáticas han cambiado significativamente en las últimas décadas, lo que ha llevado a fenómenos como inundaciones. Considera que la iniciativa legislativa en discusión es una herramienta útil para prevenir catástrofes, aunque admite que no resolverá todos los problemas. Resalta la necesidad de adaptarse a los cambios climáticos y de no ignorar las nuevas realidades en el ámbito agrícola [INT-i58804].\n\n3. **Senador del Partido Comunista de Chile**: Aborda la grave situación de los defensores ambientales, haciendo un llamado a la responsabilidad del Estado en la protección de estos individuos. Menciona el caso de Julia Chuñil, una defensora ambiental desaparecida, y subraya la urgencia de legislar para proteger a quienes defienden el medio ambiente, así como la necesidad de cumplir con tratados internacionales que garantizan su seguridad [INT-i55105].\n\nEn resumen, los parlamentarios nacidos entre 1940 y 1960 presentan una variedad de enfoques sobre el medio ambiente, desde la necesidad de inversión y adaptación a cambios climáticos, hasta la urgente protección de los defensores ambientales.",
+            "retrieved": [
+              {
+                "chunk_id": "i63899_c0",
+                "intervention_id": "i63899",
+                "score": 0.171221,
+                "speaker": "Rafael Prohens Espinosa",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Senador",
+                "session_date": "",
+                "birth_date": "1955-06-12T00:00:00",
+                "legislative_period": "",
+                "text_preview": "El señor PROHENS.- Gracias, Presidente.<br/>Escuchaba hace un rato al senador De Urresti respecto del tema del medioambiente.<br/>Yo quiero preguntar si el medioambiente se cuida solo paralizando la inversión. Lo señalo porque también existe otra forma de combatir la contaminación del medioambiente,"
+              },
+              {
+                "chunk_id": "i60046_c0",
+                "intervention_id": "i60046",
+                "score": 0.171221,
+                "speaker": "Rafael Prohens Espinosa",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Senador",
+                "session_date": "",
+                "birth_date": "1955-06-12T00:00:00",
+                "legislative_period": "",
+                "text_preview": "El señor PROHENS.- Gracias, Presidente.<br/>Escuchaba hace un rato al senador De Urresti respecto del tema del medioambiente.<br/>Yo quiero preguntar si el medioambiente se cuida solo paralizando la inversión. Lo señalo porque también existe otra forma de combatir la contaminación del medioambiente,"
+              },
+              {
+                "chunk_id": "i58804_c1",
+                "intervention_id": "i58804",
+                "score": 0.174582,
+                "speaker": "Juan Antonio Coloma Correa",
+                "party": "Partido Unión Demócrata Independiente",
+                "chamber": "Senador",
+                "session_date": "",
+                "birth_date": "1956-07-15T00:00:00",
+                "legislative_period": "",
+                "text_preview": "/>Yo he sido varios años senador del Maule y obviamente las condiciones no son iguales a las de hace dos décadas. No tengo recuerdo de inundaciones como las que se produjeron hace un par de años, que básicamente se originan por dos cosas. Una, la alteración del clima, lo que genera que hoy día esté "
+              },
+              {
+                "chunk_id": "i62503_c1",
+                "intervention_id": "i62503",
+                "score": 0.174582,
+                "speaker": "Juan Antonio Coloma Correa",
+                "party": "Partido Unión Demócrata Independiente",
+                "chamber": "Senador",
+                "session_date": "",
+                "birth_date": "1956-07-15T00:00:00",
+                "legislative_period": "",
+                "text_preview": "/>Yo he sido varios años senador del Maule y obviamente las condiciones no son iguales a las de hace dos décadas. No tengo recuerdo de inundaciones como las que se produjeron hace un par de años, que básicamente se originan por dos cosas. Una, la alteración del clima, lo que genera que hoy día esté "
+              },
+              {
+                "chunk_id": "i55105_c0",
+                "intervention_id": "i55105",
+                "score": 0.17579,
+                "speaker": "Carmen Adelaida Hertz Cádiz",
+                "party": "Partido Comunista de Chile",
+                "chamber": "Diputado",
+                "session_date": "",
+                "birth_date": "1945-06-19T00:00:00",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, hoy debemos actuar decididamente y asumir la responsabilidad que tenemos como Estado en la desaparición de la líder y defensora ambiental Julia Chuñil Catricura, quien protegía novecientas hectáreas de bosque nativo frente a la industria forestal y lleva once meses sin ser encontra"
+              }
+            ]
+          }
+        }
+      },
+      "rango_fechas": {
+        "pattern": "semantic_search_filtered_by_session_date",
+        "question": "Que se ha discutido sobre violencia en La Araucania?",
+        "ranges": {
+          "2025": {
+            "answer": "Las intervenciones sobre la violencia en La Araucanía reflejan una preocupación significativa por la situación de inseguridad y los efectos del terrorismo en la región. A continuación, se resumen los puntos principales:\n\n1. **Impacto del Terrorismo**: Se menciona que La Araucanía registra la mayor cantidad de víctimas de terrorismo, con miles de familias afectadas por diversas formas de violencia, como la toma de terrenos, asesinatos y amenazas. Esta situación ha llevado a la necesidad de que los gobiernos regionales amplíen sus capacidades para apoyar a las víctimas y prevenir el delito [INT-i52862].\n\n2. **Insuficiencia de Apoyos**: Se critica que los apoyos del Poder Ejecutivo son a menudo insuficientes, tardíos o incluso inexistentes. Se pone como ejemplo el sector Colonia Manuel Rodríguez, donde los afectados no han recibido la ayuda necesaria [INT-i52862].\n\n3. **Facultades a Gobiernos Regionales**: Se argumenta a favor de otorgar nuevas atribuciones a los gobiernos regionales para que puedan diseñar y ejecutar planes de prevención del delito y asistencia a víctimas. Esto incluye la posibilidad de financiar proyectos para dotar a las Fuerzas de Orden y Seguridad Pública de equipamiento [INT-i52862].\n\n4. **Crítica a la Falta de Voluntad**: Se expresa descontento por la falta de voluntad de los poderes del Estado para abordar la situación de violencia. Se menciona que, a pesar de la necesidad de discutir estos temas, las autoridades pertinentes no se presentan a las reuniones, lo que refleja una falta de compromiso [INT-i52882].\n\n5. **Responsabilidad del Congreso y el Gobierno**: Se critica al Congreso y al gobierno por no cumplir con sus responsabilidades en la solución de estos problemas, sugiriendo que se endosen responsabilidades a otros, como los gobiernos regionales, que se perciben como más dispuestos a actuar [INT-i52882].\n\nEn resumen, las intervenciones destacan la gravedad de la violencia en La Araucanía, la insuficiencia de las respuestas gubernamentales y la necesidad de empoderar a los gobiernos regionales para que puedan actuar de manera más efectiva en la prevención y asistencia a las víctimas.",
+            "retrieved": [
+              {
+                "chunk_id": "i54966_c1",
+                "intervention_id": "i54966",
+                "score": 0.165134,
+                "speaker": "Jorge Evaldo Rathgeb Schifferli",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2025-11-25T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "mineras de la zona norte, alejados de sus familias. Si bien son actividades rentables, el contacto familiar se va perdiendo, a pesar de que supuestamente este gobierno ha tratado de fomentar que exista un mayor relacionamiento entre los integrantes de las familias y mejores incentivos para la contra"
+              },
+              {
+                "chunk_id": "i54966_c1",
+                "intervention_id": "i54966",
+                "score": 0.165134,
+                "speaker": "Jorge Evaldo Rathgeb Schifferli",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2025-10-01T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "mineras de la zona norte, alejados de sus familias. Si bien son actividades rentables, el contacto familiar se va perdiendo, a pesar de que supuestamente este gobierno ha tratado de fomentar que exista un mayor relacionamiento entre los integrantes de las familias y mejores incentivos para la contra"
+              },
+              {
+                "chunk_id": "i52862_c0",
+                "intervention_id": "i52862",
+                "score": 0.170323,
+                "speaker": "Juan Carlos Beltrán Silva",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2025-03-18T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, por su intermedio, saludo a mis colegas parlamentarios y a los funcionarios de la Corporación. La Región de La Araucanía registra la mayor cantidad de víctimas de terrorismo. Miles de familias, a lo largo de estos años, se han visto afectadas por la toma de terrenos, asesinatos, us"
+              },
+              {
+                "chunk_id": "i52862_c0",
+                "intervention_id": "i52862",
+                "score": 0.170323,
+                "speaker": "Juan Carlos Beltrán Silva",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2025-03-18T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, por su intermedio, saludo a mis colegas parlamentarios y a los funcionarios de la Corporación. La Región de La Araucanía registra la mayor cantidad de víctimas de terrorismo. Miles de familias, a lo largo de estos años, se han visto afectadas por la toma de terrenos, asesinatos, us"
+              },
+              {
+                "chunk_id": "i52882_c1",
+                "intervention_id": "i52882",
+                "score": 0.171403,
+                "speaker": "Jorge Evaldo Rathgeb Schifferli",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2025-03-18T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": ", si no tenían tiempo, nos remitieran el proyecto a nosotros. Sin embargo, no quisieron tramitarlo ni tampoco pedir que se remitiera a la Comisión de Agricultura. Entonces, ¿de qué estamos hablando si no hay voluntad para agilizar los trámites? En la Comisión de Agricultura hoy tenemos invitados al "
+              }
+            ]
+          },
+          "2026": {
+            "answer": "Las intervenciones sobre la violencia en La Araucanía reflejan una preocupación significativa por la situación de inseguridad y terrorismo en la región. Un parlamentario del Partido Renovación Nacional destaca que La Araucanía es la región con la mayor cantidad de víctimas de terrorismo, mencionando que miles de familias han sufrido por la toma de terrenos, asesinatos, usurpaciones, amenazas y quema de siembras. Este parlamentario critica la insuficiencia y tardanza de los apoyos del Poder Ejecutivo, señalando que muchas veces estos apoyos nunca llegan a los afectados, como es el caso del sector Colonia Manuel Rodríguez en Angol [INT-i52862].\n\nAdemás, se argumenta que es necesario ampliar las capacidades de los gobiernos regionales para que puedan apoyar a las víctimas de la delincuencia y la violencia. Se propone que se otorguen nuevas atribuciones a los gobiernos regionales en materia de prevención del delito y asistencia a víctimas, lo que incluiría el diseño y ejecución de planes de prevención y el financiamiento de proyectos para dotar a las Fuerzas de Orden y Seguridad Pública de equipamiento [INT-i52862]. El parlamentario concluye afirmando que votará a favor de esta iniciativa, enfatizando la importancia de apoyar a las víctimas de manera efectiva y no solo a través de acciones simbólicas [INT-i52862].",
+            "retrieved": [
+              {
+                "chunk_id": "i56338_c1",
+                "intervention_id": "i56338",
+                "score": 0.166187,
+                "speaker": "Miguel Mellado Suazo",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2026-01-28T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "sino amenazas reales. No es contrario a una causa, sino que ha sido pensado en contra de la violencia y el terrorismo en mi Región de La Araucanía. Votaré a favor, porque Chile tiene derecho a defenderse y porque la Región de La Araucanía merece vivir en paz. He dicho."
+              },
+              {
+                "chunk_id": "i56338_c1",
+                "intervention_id": "i56338",
+                "score": 0.166187,
+                "speaker": "Miguel Mellado Suazo",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2026-01-28T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "sino amenazas reales. No es contrario a una causa, sino que ha sido pensado en contra de la violencia y el terrorismo en mi Región de La Araucanía. Votaré a favor, porque Chile tiene derecho a defenderse y porque la Región de La Araucanía merece vivir en paz. He dicho."
+              },
+              {
+                "chunk_id": "i52862_c0",
+                "intervention_id": "i52862",
+                "score": 0.170323,
+                "speaker": "Juan Carlos Beltrán Silva",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2026-03-25T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, por su intermedio, saludo a mis colegas parlamentarios y a los funcionarios de la Corporación. La Región de La Araucanía registra la mayor cantidad de víctimas de terrorismo. Miles de familias, a lo largo de estos años, se han visto afectadas por la toma de terrenos, asesinatos, us"
+              },
+              {
+                "chunk_id": "i52862_c0",
+                "intervention_id": "i52862",
+                "score": 0.170323,
+                "speaker": "Juan Carlos Beltrán Silva",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2026-03-24T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, por su intermedio, saludo a mis colegas parlamentarios y a los funcionarios de la Corporación. La Región de La Araucanía registra la mayor cantidad de víctimas de terrorismo. Miles de familias, a lo largo de estos años, se han visto afectadas por la toma de terrenos, asesinatos, us"
+              },
+              {
+                "chunk_id": "i52862_c0",
+                "intervention_id": "i52862",
+                "score": 0.170323,
+                "speaker": "Juan Carlos Beltrán Silva",
+                "party": "Partido Renovación Nacional",
+                "chamber": "Diputado",
+                "session_date": "2026-03-24T00:00:00",
+                "birth_date": "",
+                "legislative_period": "",
+                "text_preview": "Señor Presidente, por su intermedio, saludo a mis colegas parlamentarios y a los funcionarios de la Corporación. La Región de La Araucanía registra la mayor cantidad de víctimas de terrorismo. Miles de familias, a lo largo de estos años, se han visto afectadas por la toma de terrenos, asesinatos, us"
+              }
+            ]
+          }
+        }
+      },
+      "evolucion_temporal": {
+        "pattern": "semantic_search_grouped_by_session_year",
+        "question": "Que se ha discutido sobre violencia en La Araucania?",
+        "retrieved_by_year": {
+          "2025": [
+            {
+              "chunk_id": "i54966_c1",
+              "intervention_id": "i54966",
+              "score": 0.165134,
+              "speaker": "Jorge Evaldo Rathgeb Schifferli",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "2025-11-25T00:00:00",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "mineras de la zona norte, alejados de sus familias. Si bien son actividades rentables, el contacto familiar se va perdiendo, a pesar de que supuestamente este gobierno ha tratado de fomentar que exista un mayor relacionamiento entre los integrantes de las familias y mejores incentivos para la contra"
+            },
+            {
+              "chunk_id": "i54966_c1",
+              "intervention_id": "i54966",
+              "score": 0.165134,
+              "speaker": "Jorge Evaldo Rathgeb Schifferli",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "2025-10-01T00:00:00",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "mineras de la zona norte, alejados de sus familias. Si bien son actividades rentables, el contacto familiar se va perdiendo, a pesar de que supuestamente este gobierno ha tratado de fomentar que exista un mayor relacionamiento entre los integrantes de las familias y mejores incentivos para la contra"
+            }
+          ],
+          "2026": [
+            {
+              "chunk_id": "i56338_c1",
+              "intervention_id": "i56338",
+              "score": 0.166187,
+              "speaker": "Miguel Mellado Suazo",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "2026-01-28T00:00:00",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "sino amenazas reales. No es contrario a una causa, sino que ha sido pensado en contra de la violencia y el terrorismo en mi Región de La Araucanía. Votaré a favor, porque Chile tiene derecho a defenderse y porque la Región de La Araucanía merece vivir en paz. He dicho."
+            },
+            {
+              "chunk_id": "i56338_c1",
+              "intervention_id": "i56338",
+              "score": 0.166187,
+              "speaker": "Miguel Mellado Suazo",
+              "party": "Partido Renovación Nacional",
+              "chamber": "Diputado",
+              "session_date": "2026-01-28T00:00:00",
+              "birth_date": "",
+              "legislative_period": "",
+              "text_preview": "sino amenazas reales. No es contrario a una causa, sino que ha sido pensado en contra de la violencia y el terrorismo en mi Región de La Araucanía. Votaré a favor, porque Chile tiene derecho a defenderse y porque la Región de La Araucanía merece vivir en paz. He dicho."
+            }
+          ]
+        }
+      }
+    },
+    "comparacion_2_2": {
+      "question": "Que opina la UDI sobre el impuesto a las grandes fortunas?",
+      "party_filter": "Partido Unión Demócrata Independiente",
+      "why_graph_should_help": "La pregunta pide una postura de partido. El denso optimiza similitud semantica y puede mezclar partidos; GraphRAG agrega el patron tipado Position -> PoliticalParty antes de ordenar por distancia coseno.",
+      "dense": {
+        "parties_in_context": [
+          "Partido Humanista",
+          "Partido Renovación Nacional",
+          "Partido Socialista de Chile",
+          "Partido Unión Demócrata Independiente"
+        ],
+        "answer": "La UDI, a través de sus intervenciones, expresa una postura crítica respecto a la creación de impuestos, especialmente en el contexto de la propuesta de la comisión mixta. Un parlamentario de la UDI argumenta que la norma que genera impuestos no se atiene a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda, lo que considera un problema severo. Además, solicita un pronunciamiento sobre la inadmisibilidad de esa parte del informe, indicando que es un precedente serio para futuros gobiernos incorporar impuestos en una comisión mixta sin el debido proceso legislativo. También hace reserva de constitucionalidad sobre esta cuestión [INT-i58600][INT-i62299].\n\nEn resumen, la UDI se opone a la creación de impuestos en este contexto, argumentando que no se ha seguido el procedimiento adecuado y que esto podría sentar un mal precedente.",
+        "retrieved": [
+          {
+            "chunk_id": "i53110_c1",
+            "intervention_id": "i53110",
+            "score": 0.172175,
+            "speaker": "Leonardo Enrique Soto Ferrada",
+            "party": "Partido Socialista de Chile",
+            "chamber": "Diputado",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "un estudio respecto de cuánta es la evasión tributaria de los grandes consorcios, de los grandes grupos económicos. Los chilenos y chilenas que pagan impuestos por su trabajo, como las secretarias en las oficinas, pagan el ciento por ciento de los impuestos que deben, porque se los descuentan por pl"
+          },
+          {
+            "chunk_id": "i58600_c2",
+            "intervention_id": "i58600",
+            "score": 0.17293,
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "la mixta una norma de carácter económico que genera impuestos sin atenerse ni a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda.<br/>O sea, Presidente, estamos con un problema supersevero.<br/>Y ahí le quiero hacer un planteamiento respecto de la inadmisibilidad de esa par"
+          },
+          {
+            "chunk_id": "i62299_c2",
+            "intervention_id": "i62299",
+            "score": 0.17293,
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "la mixta una norma de carácter económico que genera impuestos sin atenerse ni a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda.<br/>O sea, Presidente, estamos con un problema supersevero.<br/>Y ahí le quiero hacer un planteamiento respecto de la inadmisibilidad de esa par"
+          },
+          {
+            "chunk_id": "i54076_c1",
+            "intervention_id": "i54076",
+            "score": 0.174011,
+            "speaker": "Marcia Cecilia Andrea Raphael Mora",
+            "party": "Partido Renovación Nacional",
+            "chamber": "Diputado",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "a al tener que pagar un tributo que grava sus propiedades sin considerar sus ingresos limitados, que que en muchos casos se reducen únicamente a la pensión garantizada universal (PGU). Esta situación los obliga a sacrificar una parte significativa de sus escasos recursos al cumplimiento de este pago"
+          },
+          {
+            "chunk_id": "i53494_c1",
+            "intervention_id": "i53494",
+            "score": 0.176295,
+            "speaker": "Diego Eduardo Ibáñez Cotroneo",
+            "party": "Partido Humanista",
+            "chamber": "Diputado",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "David versus Goliat, pero la verdad es que son serviles, son soldados de los intereses de Goliat en la economía. Creo que hay que ser superhonestos al respecto. Vamos al problema de las condiciones: la concentración de la riqueza. ¿Están dispuestos, para que prolifere la pyme, para que tenga más gan"
+          }
+        ]
+      },
+      "graph": {
+        "parties_in_context": [
+          "Partido Unión Demócrata Independiente"
+        ],
+        "answer": "La UDI, a través de sus intervenciones, expresa una postura crítica respecto a la inclusión de un impuesto en la propuesta de la comisión mixta. Se argumenta que esta norma de carácter económico que genera impuestos no se atiene a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda, lo que se considera un problema severo. Se solicita un pronunciamiento sobre la inadmisibilidad de esta parte del informe de la comisión mixta, ya que se considera que es irregular presentar una norma que no pasó por la Comisión de Hacienda y que no tuvo su origen en la Cámara de Diputados [INT-i58600].\n\nSin embargo, también se menciona que hay voluntad en la UDI de votar a favor del proyecto en general, con la esperanza de que a través de indicaciones se pueda mejorar el texto cuando se vea en particular. Se considera imprescindible legislar de forma definitiva y se hace referencia a la recomendación de la Fundación Jaime Guzmán de votar a favor, impulsando una reforma integral al régimen de contratación administrativa [INT-i60901][INT-i64798].\n\nEn resumen, la UDI muestra una postura crítica hacia el impuesto en cuestión, pero también está dispuesta a apoyar el proyecto en su conjunto, buscando mejoras en el proceso legislativo.",
+        "retrieved": [
+          {
+            "chunk_id": "i58600_c2",
+            "intervention_id": "i58600",
+            "score": 0.17293,
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "la mixta una norma de carácter económico que genera impuestos sin atenerse ni a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda.<br/>O sea, Presidente, estamos con un problema supersevero.<br/>Y ahí le quiero hacer un planteamiento respecto de la inadmisibilidad de esa par"
+          },
+          {
+            "chunk_id": "i62299_c2",
+            "intervention_id": "i62299",
+            "score": 0.17293,
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "la mixta una norma de carácter económico que genera impuestos sin atenerse ni a las ideas matrices del proyecto ni a un informe de la Comisión de Hacienda.<br/>O sea, Presidente, estamos con un problema supersevero.<br/>Y ahí le quiero hacer un planteamiento respecto de la inadmisibilidad de esa par"
+          },
+          {
+            "chunk_id": "i60901_c1",
+            "intervention_id": "i60901",
+            "score": 0.176882,
+            "speaker": "Iván Moreira Barros",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "hay voluntad en la UDI de votar a favor, porque, a través de las indicaciones y cuando el proyecto se vea en particular, podemos mejorarlo.<br/>Creemos que resulta imprescindible legislar en forma definitiva. No podemos estar diez años más con esto.<br/>Y aún más, la propia Fundación Jaime Guzmán, q"
+          },
+          {
+            "chunk_id": "i64798_c1",
+            "intervention_id": "i64798",
+            "score": 0.176882,
+            "speaker": "Iván Moreira Barros",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "hay voluntad en la UDI de votar a favor, porque, a través de las indicaciones y cuando el proyecto se vea en particular, podemos mejorarlo.<br/>Creemos que resulta imprescindible legislar en forma definitiva. No podemos estar diez años más con esto.<br/>Y aún más, la propia Fundación Jaime Guzmán, q"
+          },
+          {
+            "chunk_id": "i58600_c1",
+            "intervention_id": "i58600",
+            "score": 0.17843,
+            "speaker": "Juan Antonio Coloma Correa",
+            "party": "Partido Unión Demócrata Independiente",
+            "chamber": "Senador",
+            "session_date": "",
+            "birth_date": "",
+            "legislative_period": "",
+            "text_preview": "resuelto.<br/>Sobre eso no hay cuestionamiento.<br/>El problema es otro, y se lo voy a explicar.<br/>En la comisión mixta, en el último trámite (pasó el primero, pasó el segundo y pasó el tercero), apareció recién una norma que establecía una patente que, por su naturaleza, no siendo tributo, es un "
+          }
+        ]
+      }
+    }
+  }
+}
