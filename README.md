@@ -55,10 +55,3 @@ python parte1/run_parte1.py
 python parte2/run_parte2.py
 ```
 
-## Notas importantes
-
-- El modelo de embeddings es `intfloat/multilingual-e5-base` (dim=768).
-- Los documentos llevan prefijo `passage:` y las queries `query:`.
-- Similitud coseno sobre vectores **normalizados** (equivalente a producto punto).
-- El LLM es `gpt-4o-mini`, fijo en todas las partes.
-- **No recalcular** los vectores densos del CSV — ya están precalculados.
